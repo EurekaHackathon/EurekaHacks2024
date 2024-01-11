@@ -21,11 +21,11 @@ export default function CodeOfConduct() {
                 />
                 <meta
                     property="og:description"
-                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
+                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorship & fun (+ free food!)"
                 />
                 <meta
                     property="description"
-                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorsip & fun (+ free food!)"
+                    content="Abbey Park High School's annual hackathon. Join us on March 2nd for 14 hours of coding, mentorship & fun (+ free food!)"
                 />
             </Head>
             <NavBar />
