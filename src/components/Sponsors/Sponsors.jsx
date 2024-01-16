@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import APHS from "@/../public/apicon.png";
 import WolframAlpha from "@/../public/Sponsors/wolfram.png";
+import Echo3D from "@/../public/Sponsors/echo3d.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -82,31 +83,17 @@ export default function Sponsors() {
                         link="https://aph.hdsb.ca/"
                     />
                 </motion.div> */}
-                {/* <motion.div
+                {<motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["bronze-sponsors"]}
                 >
                     <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
+                        name="Echo3D"
+                        image={Echo3D}
+                        link="https://www.echo3d.com/"
                     />
-                    <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
-                    />
-                    <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
-                    />
-                    <SponsorBox
-                        name="Abbey Park"
-                        image={APHS}
-                        link="https://aph.hdsb.ca/"
-                    />
-                </motion.div> */}
+
+                </motion.div>}
                 <motion.h2 {...fadeIn}>Our Partners</motion.h2>
                 <motion.div
                     {...sponsorBoxFadeIn}
