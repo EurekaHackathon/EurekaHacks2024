@@ -90,9 +90,10 @@
 }
 
 .bronze-sponsors {
-    display: grid;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .partners {
@@ -184,7 +185,7 @@
     }
 
     .bronze-sponsors {
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
     }
 
     .shape1 {
@@ -226,7 +227,7 @@
     .bronze-sponsors {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: repeat(4, 1fr); */
     }
 }
 
