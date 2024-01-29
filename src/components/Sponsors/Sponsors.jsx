@@ -7,6 +7,7 @@ import APHS from "@/../public/apicon.png";
 import WolframAlpha from "@/../public/Sponsors/wolfram.png";
 import Echo3D from "@/../public/Sponsors/echo3d.png";
 import InterviewCake from "@/../public/Sponsors/InterviewCake.png";
+import WingsUp from "@/../public/Sponsors/WingsUp.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -44,16 +45,16 @@ export default function Sponsors() {
             </div>
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
-                {/* <motion.div
+                {<motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["plat-sponsors"]}
                 >
                     <SponsorBox
-                        name="Wolfram Alpha"
-                        image={WolframAlpha}
-                        link="https://www.wolframalpha.com/"
+                        name="WingsUp!"
+                        image={WingsUp}
+                        link="https://www.wingsup.com/"
                     />
-                </motion.div> */}
+                </motion.div>}
                 <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
