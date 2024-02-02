@@ -8,7 +8,7 @@ import WolframAlpha from "@/../public/Sponsors/wolfram.png";
 import Echo3D from "@/../public/Sponsors/echo3d.png";
 import InterviewCake from "@/../public/Sponsors/InterviewCake.png";
 import WingsUp from "@/../public/Sponsors/WingsUp.png";
-import Xyz from "@/../public/Sponsors/XYZ.png";
+// import Xyz from "@/../public/Sponsors/xyz.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -39,23 +39,29 @@ const sponsorBoxFadeIn = {
 
 export default function Sponsors() {
     return (
-        <section id="sponsors" className={styles.sponsors} data-nosnippet={true}>
+        <section
+            id="sponsors"
+            className={styles.sponsors}
+            data-nosnippet={true}
+        >
             <div className={styles["shape-container"]}>
                 <motion.div className={styles.shape1} {...shapeFadeIn} />
                 <motion.div className={styles.shape2} {...shapeFadeIn} />
             </div>
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
-                {<motion.div
-                    {...sponsorBoxFadeIn}
-                    className={styles["plat-sponsors"]}
-                >
-                    <SponsorBox
-                        name="WingsUp!"
-                        image={WingsUp}
-                        link="https://www.wingsup.com/"
-                    />
-                </motion.div>}
+                {
+                    <motion.div
+                        {...sponsorBoxFadeIn}
+                        className={styles["plat-sponsors"]}
+                    >
+                        <SponsorBox
+                            name="WingsUp!"
+                            image={WingsUp}
+                            link="https://www.wingsup.com/"
+                        />
+                    </motion.div>
+                }
                 <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
@@ -66,34 +72,36 @@ export default function Sponsors() {
                         link="https://www.wolframalpha.com/"
                     />
                 </motion.div>
-                {<motion.div
-                    {...sponsorBoxFadeIn}
-                    className={styles["silver-sponsors"]}
-                >
-                    <SponsorBox
-                        name="Interview Cake"
-                        image={InterviewCake}
-                        link="https://www.interviewcake.com/"
-                    />
+                {
+                    <motion.div
+                        {...sponsorBoxFadeIn}
+                        className={styles["silver-sponsors"]}
+                    >
+                        <SponsorBox
+                            name="Interview Cake"
+                            image={InterviewCake}
+                            link="https://www.interviewcake.com/"
+                        />
 
-                    {/* <SponsorBox
+                        {/* <SponsorBox
                         name="xyz"
                         image={Xyz}
                         link="https://xyz.xyz/"
                     /> */}
-
-                </motion.div>}
-                {<motion.div
-                    {...sponsorBoxFadeIn}
-                    className={styles["bronze-sponsors"]}
-                >
-                    <SponsorBox
-                        name="Echo3D"
-                        image={Echo3D}
-                        link="https://www.echo3d.com/"
-                    />
-
-                </motion.div>}
+                    </motion.div>
+                }
+                {
+                    <motion.div
+                        {...sponsorBoxFadeIn}
+                        className={styles["bronze-sponsors"]}
+                    >
+                        <SponsorBox
+                            name="Echo3D"
+                            image={Echo3D}
+                            link="https://www.echo3d.com/"
+                        />
+                    </motion.div>
+                }
                 <motion.h2 {...fadeIn}>Our Partners</motion.h2>
                 <motion.div
                     {...sponsorBoxFadeIn}
