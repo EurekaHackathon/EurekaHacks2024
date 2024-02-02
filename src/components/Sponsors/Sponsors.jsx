@@ -126,6 +126,27 @@ export default function Sponsors() {
                         </div>
                     </div>
                 </motion.div>
+                {/* <motion.div
+                    transition={{
+                        duration: 2,
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 25,
+                    }}
+                    whileHover={{ scale: 1.07 }}
+                    whileTap={{ scale: 0.9 }}
+                    className={styles["howtosponsor-outline"]}
+                    {...fadeIn}
+                >
+
+                    <div className={styles["howtosponsor"]}>
+                        <div className={styles["button"]}>
+                            <a href="/donate">
+                                Looking to make a donation?
+                            </a>
+                        </div>
+                    </div>
+                </motion.div> */}
             </div>
 
             <p></p>
