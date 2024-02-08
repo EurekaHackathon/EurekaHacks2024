@@ -1,0 +1,75 @@
+.header {
+    background: url("../../public/WebsiteMainPhoto2024.png") no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtain {
+    background: rgba(0, 0, 0, 0.289);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.email-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form,
+.preview {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: var(--light-main-color);
+    border-radius: 0.5rem;
+}
+
+.textarea {
+    width: 92%;
+    min-height: 20rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: -1rem 2rem 2rem 2rem;
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+    font-size: 20px;
+    resize: none;
+}
+
+.button {
+    background-color: rgb(0, 153, 255);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition:
+        color 0.3s,
+        background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(24, 215, 255);
+}
