@@ -46,7 +46,7 @@ export const members = [
     },
     {
         name: "Nick Seymour",
-        position: "Finance Manager / Sponsorships",
+        position: "Sponsorships",
         image: "Team/Nick.jpg",
     },
     {
@@ -106,7 +106,7 @@ export const members = [
     },
     {
         name: "Suri Tian",
-        position: "Social Media",
+        position: "Communications",
         image: "Team/Suri.jpg",
     },
 ];
