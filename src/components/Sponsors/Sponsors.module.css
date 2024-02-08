@@ -207,9 +207,9 @@
         height: auto;
     }
 
-    .bronze-sponsors {
-        /* grid-template-columns: repeat(3, 1fr); */
-    }
+    /* .bronze-sponsors {
+        grid-template-columns: repeat(3, 1fr);
+    } */
 
     .shape1 {
         top: -1.8rem;

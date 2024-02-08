@@ -8,7 +8,7 @@ import WolframAlpha from "@/../public/Sponsors/wolfram.png";
 import Echo3D from "@/../public/Sponsors/echo3d.png";
 import InterviewCake from "@/../public/Sponsors/InterviewCake.png";
 import WingsUp from "@/../public/Sponsors/WingsUp.png";
-// import Xyz from "@/../public/Sponsors/xyz.png";
+import Xyz from "@/../public/Sponsors/xyz.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -83,11 +83,11 @@ export default function Sponsors() {
                             link="https://www.interviewcake.com/"
                         />
 
-                        {/* <SponsorBox
-                        name="xyz"
-                        image={Xyz}
-                        link="https://xyz.xyz/"
-                    /> */}
+                        <SponsorBox
+                            name="xyz"
+                            image={Xyz}
+                            link="https://xyz.xyz/"
+                        />
                     </motion.div>
                 }
                 {
