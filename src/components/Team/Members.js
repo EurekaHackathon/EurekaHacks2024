@@ -11,7 +11,7 @@ export const members = [
     },
     {
         name: "Yohance Pawania",
-        position: "Director of Logistics / Web Development",
+        position: "Director of Logistics",
         image: "Team/Yohance.jpg",
     },
     {
