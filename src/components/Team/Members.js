@@ -46,7 +46,7 @@ export const members = [
     },
     {
         name: "Nick Seymour",
-        position: "Sponsorships",
+        position: "Finance",
         image: "Team/Nick.jpg",
     },
     {
