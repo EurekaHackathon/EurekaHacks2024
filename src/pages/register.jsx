@@ -38,7 +38,7 @@ export default function Register() {
             />
             <NavBar />
             <iframe
-                data-tally-src="https://tally.so/embed/nGlK5o?transparentBackground=1&dynamicHeight=1"
+                data-tally-src="https://tally.so/embed/w8xv4A?transparentBackground=1&dynamicHeight=1"
                 width="100%"
                 height="2464"
                 loading="eager"
