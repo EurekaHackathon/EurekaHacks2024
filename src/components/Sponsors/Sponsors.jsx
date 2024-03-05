@@ -1,7 +1,7 @@
-import React from "react";
 import styles from "./Sponsors.module.css";
 import SponsorBox from "./SponsorBox.jsx";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import APHS from "@/../public/apicon.png";
 import WolframAlpha from "@/../public/Sponsors/wolfram.png";
@@ -134,7 +134,7 @@ export default function Sponsors() {
                         </div>
                     </div>
                 </motion.div>
-                {/* <motion.div
+                <motion.div
                     transition={{
                         duration: 2,
                         type: "spring",
@@ -149,12 +149,12 @@ export default function Sponsors() {
 
                     <div className={styles["howtosponsor"]}>
                         <div className={styles["button"]}>
-                            <a href="/donate">
+                            <Link href="/donate" target="_blank">
                                 Looking to make a donation?
-                            </a>
+                            </Link>
                         </div>
                     </div>
-                </motion.div> */}
+                </motion.div>
             </div>
 
             <p></p>

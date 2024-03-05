@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./About.module.css";
 import AboutImage from "@/../public/About/img.jpg";
 import Image from "next/image";

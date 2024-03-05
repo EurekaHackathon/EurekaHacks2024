@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Member.module.css";
 
 export default function Member({ name, position, image }) {

@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import Logo from "@/../public/EurekaLogo2024.png";
@@ -109,8 +108,21 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li className={styles.item}>
-                                <Link className={styles.link} href="https://eurekahacks-2024.devpost.com/" target="_blank">
+                                <Link
+                                    className={styles.link}
+                                    href="https://eurekahacks-2024.devpost.com/"
+                                    target="_blank"
+                                >
                                     Devpost
+                                </Link>
+                            </li>
+                            <li className={styles.item}>
+                                <Link
+                                    className={styles.link}
+                                    href="/donate"
+                                    target="_blank>"
+                                >
+                                    Donate
                                 </Link>
                             </li>
                         </ul>
