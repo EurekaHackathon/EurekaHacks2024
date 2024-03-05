@@ -4,9 +4,7 @@ import styles from "@/styles/email.module.css";
 import Head from "next/head";
 
 export default function Email() {
-    function copyHTML() {
-
-    }
+    function copyHTML() {}
     return (
         <>
             <Head>
@@ -42,9 +40,7 @@ export default function Email() {
                     </div>
                     <div className={styles["preview"]}>
                         <h3>Preview</h3>
-                        <p>
-                            
-                        </p>
+                        <p></p>
                     </div>
                 </div>
                 <button className={styles["button"]} onClick={copyHTML}>

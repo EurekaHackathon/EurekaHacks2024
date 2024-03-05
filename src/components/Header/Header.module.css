@@ -42,7 +42,7 @@
     display: none;
 }
 
-@media (min-height: 800px)  {
+@media (min-height: 800px) {
     .landing-1 {
         display: block;
     }
@@ -371,7 +371,6 @@
         height: auto;
     }
 }
-
 
 @media (min-width: 2300px) {
     .banner-content {

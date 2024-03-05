@@ -146,7 +146,6 @@ export default function Sponsors() {
                     className={styles["howtosponsor-outline"]}
                     {...fadeIn}
                 >
-
                     <div className={styles["howtosponsor"]}>
                         <div className={styles["button"]}>
                             <Link href="/donate" target="_blank">

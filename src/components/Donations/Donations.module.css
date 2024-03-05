@@ -34,18 +34,18 @@
     max-width: 100%;
 }
 
-.donate-image{
+.donate-image {
     height: 40rem;
     width: auto;
 }
 
 .glow {
     background-image: linear-gradient(
-            30deg,
-            #22f0e7,
-            #df71ef,
-            #22f0e7,
-            #df71ef
+        30deg,
+        #22f0e7,
+        #df71ef,
+        #22f0e7,
+        #df71ef
     );
     background-size: 400%;
     padding: 3px;
