@@ -9,6 +9,7 @@ import Echo3D from "@/../public/Sponsors/echo3d.png";
 import InterviewCake from "@/../public/Sponsors/InterviewCake.png";
 import WingsUp from "@/../public/Sponsors/WingsUp.png";
 import Xyz from "@/../public/Sponsors/xyz.png";
+import Sobeys from "@/../public/Sponsors/sobeys.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -98,7 +99,13 @@ export default function Sponsors() {
                         <SponsorBox
                             name="Echo3D"
                             image={Echo3D}
-                            link="https://www.echo3d.com/"
+                            link="https://www.sobeys.com/"
+                        />
+
+                        <SponsorBox
+                            name="Sobeys"
+                            image={Sobeys}
+                            link="https://www.sobeys.com/"
                         />
                     </motion.div>
                 }
