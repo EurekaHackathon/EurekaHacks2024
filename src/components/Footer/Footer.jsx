@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
-import Logo from "@/../public/EurekaLogo2024.png";
+import Logo from "@/../public/EurekaRotaryHorizontal.png";
 import { BsInstagram, BsLinkedin, BsTiktok, BsDiscord } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -25,10 +25,6 @@ export default function Footer() {
                                 alt="EurekaIcon"
                             />
                         </Link>
-                        <div className={styles.textLogo}>
-                            <h2>Eureka</h2>
-                            <h3>HACKS</h3>
-                        </div>
                     </div>
                     <div>
                         <p className={styles.title}>Social Media</p>

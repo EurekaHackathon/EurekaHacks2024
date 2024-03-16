@@ -23,7 +23,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1em;
 }
 
 .textLogo h2 {
@@ -38,7 +37,7 @@
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
     height: auto;
 }
 
@@ -137,5 +136,15 @@
     .grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 6vw;
+    }
+
+    .logo {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1360px) {
+    .logo {
+        width: 400px;
     }
 }
