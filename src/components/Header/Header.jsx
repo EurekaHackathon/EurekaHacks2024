@@ -6,6 +6,7 @@ import Landing1 from "@/../public/Header/landing-1.jpg";
 import Landing2 from "@/../public/Header/landing-2.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import Rotary from "@/../public/Rotary.jpg";
 
 export default function Header() {
     return (
@@ -97,6 +98,15 @@ export default function Header() {
                                     src={Logo}
                                     alt="Eureka Logo"
                                 />
+                            </motion.div>
+                            <h4>In association with</h4>
+                            <motion.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 2 }}
+                                className={styles["rotary-logo"]}
+                            >
+                                <Image src={Rotary} alt="Rotary Logo" />
                             </motion.div>
                         </div>
                     </div>

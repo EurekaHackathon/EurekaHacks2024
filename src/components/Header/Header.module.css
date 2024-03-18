@@ -109,16 +109,34 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    flex-direction: column;
     width: 32%;
-    overflow-x: visible;
     margin-top: -1.4rem;
+    overflow-x: visible;
+}
+
+.banner-logo-container > h4 {
+    color: white;
+    margin: 0 auto;
+    font-size: 10px;
 }
 
 .banner-logo {
     height: auto;
-    width: 120%;
-    margin-left: -1rem;
+    width: 110%;
     overflow-x: hidden;
+}
+
+.rotary-logo {
+    width: 80%;
+    height: auto;
+    margin: 1rem auto -2rem auto;
+}
+
+.rotary-logo > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .glow {
@@ -301,6 +319,15 @@
         align-content: center;
         overflow-x: visible;
     } */
+    .banner-logo-container > h4 {
+        color: white;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .rotary-logo {
+        width: 90%;
+    }
 
     .banner-logo,
     .banner-logo > img {
