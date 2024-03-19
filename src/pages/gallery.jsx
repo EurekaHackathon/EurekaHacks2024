@@ -4,7 +4,7 @@ import Folder from "@/components/Folder/Folder"
 import Carousel from "@/components/Carousel/Carousel"
 
 export default function Gallery() {
-    const [path, setPath] = useState("C:\\Users\\EurekaHacks\\2023\\");
+    const [path, setPath] = useState("C:\\Users\\EurekaHACKS\\2023\\");
 
     return (
         <>
@@ -19,7 +19,7 @@ export default function Gallery() {
                     <div className={styles.sideBar}>
                         <Folder name="2023" depth={1}></Folder>
                         <Folder name="Projects" depth={2}></Folder>
-                        <Folder name="Participents" depth={2}></Folder>
+                        <Folder name="Participants" depth={2}></Folder>
                         <Folder name="Presentations" depth={2}></Folder>
                     </div>
                     <div className={styles.view}>
