@@ -1,8 +1,12 @@
 import styles from "./Member.module.css";
+import teamStyles from "./Team.module.css"
 
-export default function Member({ name, position, image }) {
+
+export default function Member({ name, position, image, director=false }) {
+    const classes = director ? styles.director + " " + teamStyles.director
+                        : styles.member + " " + teamStyles.member;
     return (
-        <div className={styles.member}>
+        <div className={classes}>
             <div className={styles.headshot}>
                 <img
                     className={styles.image}

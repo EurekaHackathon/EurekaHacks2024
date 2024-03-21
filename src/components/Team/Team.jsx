@@ -25,6 +25,16 @@ const logoFadeIn = {
     viewport: { once: true, amount: 1 },
 };
 
+const textFadeIn = {
+    initial: { opacity: 0 },
+    whileInView: {
+        opacity: 1,
+        transition: { duration: 1 },
+    },
+    viewport: { once: true, amount: 0.8 },
+    style: { textAlign: "center" }
+}
+
 export default function Team() {
     const gridRef = useRef(null);
     const isOnScreen = useOnScreen(gridRef);
@@ -56,15 +66,7 @@ export default function Team() {
         <section id="team" className={styles.team} data-nosnippet={true}>
             <div className={styles.grid} ref={gridRef}>
                 <div className={styles.text}>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{
-                            opacity: 1,
-                            transition: { duration: 1 },
-                        }}
-                        viewport={{ once: true, amount: 0.8 }}
-                        style={{ textAlign: "center" }}
-                    >
+                    <motion.div {...textFadeIn} >
                         <div className={styles.title}>
                             <h1>Eureka</h1>
                             <h2>HACKS</h2>
@@ -84,6 +86,14 @@ export default function Team() {
                         src={Logo}
                         alt="Eureka! Icon"
                     />
+                </motion.div>
+
+                <motion.div className={styles.directorsTitle} {...textFadeIn}>
+                    <h2>Meet the Directors</h2>
+                </motion.div>
+
+                <motion.div className={styles.membersTitle} {...textFadeIn}>
+                    <h2>Meet the Members</h2>
                 </motion.div>
             </div>
 

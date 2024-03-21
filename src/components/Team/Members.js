@@ -3,16 +3,19 @@ export const members = [
         name: "Adam Selim",
         position: "Co-President",
         image: "Team/Adam.jpg",
+        director: true,
     },
     {
         name: "David Lim",
         position: "Co-President",
         image: "Team/David.jpg",
+        director: true,
     },
     {
         name: "Yohance Pawania",
         position: "Director of Logistics",
         image: "Team/Yohance.jpg",
+        director: true,
     },
     {
         name: "Zain Nawaz",
@@ -28,6 +31,7 @@ export const members = [
         name: "Rahul Patel",
         position: "Director of Sponsorhips",
         image: "Team/Rahul.jpg",
+        director: true,
     },
     {
         name: "Minsun Kim",
@@ -58,6 +62,7 @@ export const members = [
         name: "Alec Jiang",
         position: "Director of Visual Design",
         image: "Team/Alec.jpg",
+        director: true,
     },
     {
         name: "Aadya Khanna",
@@ -73,11 +78,13 @@ export const members = [
         name: "Ben Zhou",
         position: "Director of Web Development",
         image: "Team/Ben.jpg",
+        director: true,
     },
     {
         name: "James Fan",
         position: "Director of Web Development",
         image: "Team/James.jpg",
+        director: true,
     },
     {
         name: "Jimin So",
@@ -93,6 +100,7 @@ export const members = [
         name: "Mahiya Majeed",
         position: "Director of Social Media",
         image: "Team/Mahiya.jpg",
+        director: true,
     },
     {
         name: "Farouk Jabsheh",
