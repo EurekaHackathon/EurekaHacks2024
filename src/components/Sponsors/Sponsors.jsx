@@ -10,6 +10,8 @@ import InterviewCake from "@/../public/Sponsors/InterviewCake.png";
 import WingsUp from "@/../public/Sponsors/WingsUp.png";
 import Xyz from "@/../public/Sponsors/xyz.png";
 import Sobeys from "@/../public/Sponsors/sobeys.png";
+import Rotary from "@/../public/Rotary.jpg";
+import Digitalent from "@/../public/Sponsors/digitalent.jpg";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -60,6 +62,18 @@ export default function Sponsors() {
                             name="WingsUp!"
                             image={WingsUp}
                             link="https://www.wingsup.com/"
+                        />
+
+                        <SponsorBox
+                            name="Rotary"
+                            image={Rotary}
+                            link="https://portal.clubrunner.ca/162"
+                        />
+
+                        <SponsorBox
+                            name="Digitalent"
+                            image={Digitalent}
+                            link="https://www.hiredigitalent.com/"
                         />
                     </motion.div>
                 }
