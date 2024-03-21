@@ -7,12 +7,13 @@
 
 .donate-text {
     padding-bottom: 30px;
+    margin-top: -5em;
 }
 
 .link {
     display: inline;
     position: relative;
-    color: var(--lighter-text-color);
+    color: #5ec4ff;
     font-size: 0.9em;
 }
 
@@ -24,7 +25,7 @@
     width: 100%;
     max-width: 0;
     height: 3px;
-    background-color: var(--lighter-text-color);
+    background-color: #5ec4ff;
     transition: 200ms ease;
     opacity: 0;
 }
@@ -51,4 +52,23 @@
     padding: 3px;
     animation: breathe 20s linear infinite;
     margin-top: -0.5rem;
+}
+
+.navbar-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: 45px;
+    padding: 1em;
+    position: relative;
+}
+
+.navbar-box {
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 80px;
+    height: 100%;
+    position: relative;
 }
