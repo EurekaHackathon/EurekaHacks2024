@@ -1,5 +1,6 @@
 import styles from "./Sponsors.module.css";
 import SponsorBox from "./SponsorBox.jsx";
+import TempWingsUpFix from "./TempWingsUpFix";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -58,8 +59,8 @@ export default function Sponsors() {
                         {...sponsorBoxFadeIn}
                         className={styles["plat-sponsors"]}
                     >
-                        <SponsorBox
-                            name="WingsUp!"
+                        <TempWingsUpFix
+                            name="WingsUp"
                             image={WingsUp}
                             link="https://www.wingsup.com/"
                         />
