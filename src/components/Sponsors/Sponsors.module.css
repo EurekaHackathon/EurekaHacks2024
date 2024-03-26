@@ -151,6 +151,11 @@
     /* grid-template-columns: repeat(3, 1fr); */
 }
 
+.sponsor-panel .plat-sponsors .wingsup > img {
+    width: 18rem;
+    height: auto;
+}
+
 .partners {
     display: grid;
     align-items: center;
@@ -239,6 +244,15 @@
         height: auto;
     }
 
+    .plat-sponsors .sponsorbox > img {
+        width: 20rem;
+        height: auto;
+    }
+    .sponsor-panel .plat-sponsors .wingsup > img {
+        width: 40rem;
+        height: auto;
+    }
+
     .tempwingsupfix {
         margin: 1rem;
         padding: 1rem;
@@ -286,6 +300,11 @@
 @media (min-width: 1350px) {
     .sponsorbox > img {
         width: 15rem;
+        height: auto;
+    }
+
+    .sponsor-panel .plat-sponsors .wingsup > img {
+        width: 40rem;
         height: auto;
     }
 

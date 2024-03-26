@@ -59,10 +59,11 @@ export default function Sponsors() {
                         {...sponsorBoxFadeIn}
                         className={styles["plat-sponsors"]}
                     >
-                        <TempWingsUpFix
+                        <SponsorBox
                             name="WingsUp"
                             image={WingsUp}
                             link="https://www.wingsup.com/"
+                            className={styles["wingsup"]}
                         />
 
                         <SponsorBox
@@ -168,7 +169,11 @@ export default function Sponsors() {
                     className={styles["howtosponsor-outline"]}
                     {...fadeIn}
                 >
-                    <a href="/donate" target="_blank" className={styles["howtosponsor"]}>
+                    <a
+                        href="/donate"
+                        target="_blank"
+                        className={styles["howtosponsor"]}
+                    >
                         <div className={styles["button"]}>
                             Looking to make a donation?
                         </div>
