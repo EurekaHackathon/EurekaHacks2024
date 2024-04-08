@@ -1,6 +1,5 @@
 import styles from "./Sponsors.module.css";
 import SponsorBox from "./SponsorBox.jsx";
-import TempWingsUpFix from "./TempWingsUpFix";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
