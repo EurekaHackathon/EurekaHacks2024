@@ -53,31 +53,30 @@ export default function Sponsors() {
             </div>
             <motion.h2 {...fadeIn}>Sponsors</motion.h2>
             <div className={styles["sponsor-panel"]}>
-                {
-                    <motion.div
-                        {...sponsorBoxFadeIn}
-                        className={styles["plat-sponsors"]}
-                    >
-                        <SponsorBox
-                            name="WingsUp"
-                            image={WingsUp}
-                            link="https://www.wingsup.com/"
-                            className={styles["wingsup"]}
-                        />
+                <motion.div
+                    {...sponsorBoxFadeIn}
+                    className={styles["plat-sponsors"]}
+                >
+                    <SponsorBox
+                        name="WingsUp"
+                        image={WingsUp}
+                        link="https://www.wingsup.com/"
+                        className={styles["wingsup"]}
+                    />
 
-                        <SponsorBox
-                            name="Rotary"
-                            image={Rotary}
-                            link="https://portal.clubrunner.ca/162"
-                        />
+                    <SponsorBox
+                        name="Rotary"
+                        image={Rotary}
+                        link="https://portal.clubrunner.ca/162"
+                    />
 
-                        <SponsorBox
-                            name="Digitalent"
-                            image={Digitalent}
-                            link="https://www.hiredigitalent.com/"
-                        />
-                    </motion.div>
-                }
+                    <SponsorBox
+                        name="Digitalent"
+                        image={Digitalent}
+                        link="https://www.hiredigitalent.com/"
+                    />
+                </motion.div>
+
                 <motion.div
                     {...sponsorBoxFadeIn}
                     className={styles["gold-sponsors"]}
@@ -88,42 +87,41 @@ export default function Sponsors() {
                         link="https://www.wolframalpha.com/"
                     />
                 </motion.div>
-                {
-                    <motion.div
-                        {...sponsorBoxFadeIn}
-                        className={styles["silver-sponsors"]}
-                    >
-                        <SponsorBox
-                            name="Interview Cake"
-                            image={InterviewCake}
-                            link="https://www.interviewcake.com/"
-                        />
 
-                        <SponsorBox
-                            name="xyz"
-                            image={Xyz}
-                            link="https://xyz.xyz/"
-                        />
-                    </motion.div>
-                }
-                {
-                    <motion.div
-                        {...sponsorBoxFadeIn}
-                        className={styles["bronze-sponsors"]}
-                    >
-                        <SponsorBox
-                            name="Echo3D"
-                            image={Echo3D}
-                            link="https://www.sobeys.com/"
-                        />
+                <motion.div
+                    {...sponsorBoxFadeIn}
+                    className={styles["silver-sponsors"]}
+                >
+                    <SponsorBox
+                        name="Interview Cake"
+                        image={InterviewCake}
+                        link="https://www.interviewcake.com/"
+                    />
 
-                        <SponsorBox
-                            name="Sobeys"
-                            image={Sobeys}
-                            link="https://www.sobeys.com/"
-                        />
-                    </motion.div>
-                }
+                    <SponsorBox
+                        name="xyz"
+                        image={Xyz}
+                        link="https://xyz.xyz/"
+                    />
+                </motion.div>
+
+                <motion.div
+                    {...sponsorBoxFadeIn}
+                    className={styles["bronze-sponsors"]}
+                >
+                    <SponsorBox
+                        name="Echo3D"
+                        image={Echo3D}
+                        link="https://www.sobeys.com/"
+                    />
+
+                    <SponsorBox
+                        name="Sobeys"
+                        image={Sobeys}
+                        link="https://www.sobeys.com/"
+                    />
+                </motion.div>
+
                 <motion.h2 {...fadeIn}>Our Partners</motion.h2>
                 <motion.div
                     {...sponsorBoxFadeIn}

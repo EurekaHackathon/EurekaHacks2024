@@ -48,7 +48,8 @@
     grid-row: 2;
 }
 
-.member, .director {
+.member,
+.director {
     opacity: 0;
     animation-duration: 400ms;
     animation-fill-mode: forwards;
@@ -100,7 +101,8 @@
     top: 5%;
 }
 
-.directorsTitle, .membersTitle {
+.directorsTitle,
+.membersTitle {
     display: none;
 }
 
@@ -111,9 +113,8 @@
         grid-template-rows: auto;
         grid-auto-flow: row;
         padding: 0 1em;
-
     }
-    
+
     .grid :nth-child(7),
     .grid :nth-child(15) {
         grid-row: initial;
@@ -128,7 +129,8 @@
         grid-area: unset;
     }
 
-    .directorsTitle, .membersTitle {
+    .directorsTitle,
+    .membersTitle {
         display: initial;
         grid-column: span 3;
     }

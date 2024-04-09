@@ -67,8 +67,9 @@
 }
 
 .sponsorbox > img {
-    width: 120px;
+    width: 140px;
     height: auto;
+    object-fit: contain;
 }
 
 .sponsorbox:hover {
@@ -96,7 +97,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .gold-sponsors > a {
@@ -107,14 +108,14 @@
     display: grid;
     width: 100%;
     justify-content: center;
-    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .bronze-sponsors {
     display: flex;
     justify-content: center;
     width: 100%;
-    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .sponsor-panel .plat-sponsors .wingsup > img {

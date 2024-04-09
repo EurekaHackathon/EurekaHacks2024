@@ -99,7 +99,13 @@ export default function Header() {
                                     alt="Eureka Logo"
                                 />
                             </motion.div>
-                            <h4>In association with</h4>
+                            <motion.h4
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 2 }}
+                            >
+                                In association with
+                            </motion.h4>
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
