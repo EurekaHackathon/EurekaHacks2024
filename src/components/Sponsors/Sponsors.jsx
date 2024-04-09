@@ -85,6 +85,7 @@ export default function Sponsors() {
                         name="Wolfram Alpha"
                         image={WolframAlpha}
                         link="https://www.wolframalpha.com/"
+                        className={styles["wolfram"]}
                     />
                 </motion.div>
 
@@ -96,6 +97,7 @@ export default function Sponsors() {
                         name="Interview Cake"
                         image={InterviewCake}
                         link="https://www.interviewcake.com/"
+                        className={styles["cake"]}
                     />
 
                     <SponsorBox

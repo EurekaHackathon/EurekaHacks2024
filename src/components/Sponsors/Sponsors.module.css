@@ -123,6 +123,11 @@
     height: auto;
 }
 
+.sponsor-panel .gold-sponsors .wolfram > img {
+    width: 7rem;
+    height: 3rem;
+}
+
 .partners {
     display: grid;
     align-items: center;
@@ -193,6 +198,15 @@
         height: 170px;
         width: auto;
     }
+
+    .sponsor-panel .silver-sponsors .cake > img {
+        width: 240px;
+    }
+
+    .sponsor-panel .gold-sponsors .wolfram > img {
+        width: 20rem;
+        height: auto;
+    }    
 }
 
 @media (min-width: 1024px) {
@@ -283,6 +297,10 @@
     .shape2 {
         top: 3.5rem;
         left: calc(50vw + 4.6rem);
+    }
+
+    .sponsor-panel .silver-sponsors .cake > img {
+        width: 300px;
     }
 }
 
