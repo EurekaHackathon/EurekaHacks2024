@@ -12,6 +12,7 @@ import Xyz from "@/../public/Sponsors/xyz.png";
 import Sobeys from "@/../public/Sponsors/sobeys.png";
 import Rotary from "@/../public/Rotary.jpg";
 import Digitalent from "@/../public/Sponsors/digitalent.jpg";
+import Staples from "@/../public/Sponsors/Staples.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -121,6 +122,12 @@ export default function Sponsors() {
                         name="Sobeys"
                         image={Sobeys}
                         link="https://www.sobeys.com/"
+                    />
+
+                    <SponsorBox
+                        name="Staples"
+                        image={Staples}
+                        link="https://www.staples.ca/"
                     />
                 </motion.div>
 
