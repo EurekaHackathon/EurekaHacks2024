@@ -66,7 +66,7 @@ export default function Header() {
                             <h4>May 4th, 2024</h4>
                             <h1>Eureka</h1>
                             <h3>HACKS</h3>
-
+                            <h4>8:00AM-8:00PM</h4>
                             <motion.div
                                 transition={{
                                     duration: 2,
