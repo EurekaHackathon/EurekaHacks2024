@@ -76,7 +76,6 @@ export default function Team() {
                     </motion.div>
                 </div>
 
-                
                 <motion.div className={styles.logo} {...logoFadeIn}>
                     <Image
                         className={styles.icon}
@@ -89,7 +88,9 @@ export default function Team() {
                     <h2>Meet the Directors</h2>
                 </motion.div>
                 {members.map((info, index) => {
-                    return info.director ? (<Member {...info} key={index} />) : null;
+                    return info.director ? (
+                        <Member {...info} key={index} />
+                    ) : null;
                 })}
             </div>
 

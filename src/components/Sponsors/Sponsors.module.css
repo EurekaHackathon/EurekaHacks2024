@@ -194,7 +194,7 @@
         height: 50px;
         width: 50px;
     }
-    
+
     .partners > a {
         height: 5rem;
     }
@@ -215,7 +215,7 @@
     .sponsor-panel .gold-sponsors .wolfram > img {
         width: 20rem;
         height: auto;
-    }    
+    }
 }
 
 @media (min-width: 1024px) {
