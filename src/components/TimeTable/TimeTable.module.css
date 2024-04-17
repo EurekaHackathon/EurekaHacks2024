@@ -1,0 +1,62 @@
+.table {
+    display: grid;
+    grid-template-columns: auto repeat(4, 1fr);
+    gap: 4px 2em;
+}
+
+.columnName {
+    text-align: center;
+}
+
+.marker, .divider {
+    grid-column: 1;
+    height: 25px;
+}
+
+.marker {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marker > p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.isHour {
+    color: var(--lighter-text-color);
+}
+
+.isMinute {
+    color: #605c73;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: calc(50% - 15px);
+    top: calc(50% - 1px);
+    background-color: #605c7383;
+}
+
+.slot {
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slot > p {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    text-align: center;
+    font-size: 1em;
+}
