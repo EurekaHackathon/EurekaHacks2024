@@ -42,9 +42,11 @@
 .divider::after {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 200rem;
+    max-width: 1366px;
+    z-index: -10;
     height: 2px;
-    left: calc(50% - 15px);
+    left: calc(50% - 30px);
     top: calc(50% - 1px);
     background-color: #605c7383;
 }
