@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
             minute: 0
         },
         timeInc: 30,
-        columnNames: ["Time", "Theatre", "Library", "Activity Room", "Cafeteria"],
+        columnNames: ["Time", "Theatre", "Library", "Activity Room", "Cafeteria", "Misc"],
         events: [
             {
                 name: "Opening Ceremony",
@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
                 duration: 60,
             },
             {
-                name: "Intro to Quantam Computing",
+                name: "Intro to Quantum Computing",
                 color: "var(--terminal-blue)",
                 start: {
                     hour: 11,
@@ -217,6 +217,26 @@ export default function PrivacyPolicy() {
                 column: 2,
                 duration: 30,
             },
+            {
+                name: "Scavenger Hunt Starts",
+                color: "var(--terminal-red)",
+                start: {
+                    hour: 8,
+                    minute: 30
+                },
+                column: 6,
+                duration: 30,
+            },
+            {
+                name: "Face & Banner Painting",
+                color: "var(--terminal-red)",
+                start: {
+                    hour: 9,
+                    minute: 30
+                },
+                column: 6,
+                duration: 30,
+            }
         ]
     };
 
