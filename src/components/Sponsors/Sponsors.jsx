@@ -15,6 +15,7 @@ import Digitalent from "@/../public/Sponsors/digitalent.jpg";
 import Staples from "@/../public/Sponsors/Staples.png";
 import CryptoChicks from "@/../public/Sponsors/cryptochicks.png";
 import NoFrills from "@/../public/Sponsors/olegs.png";
+import HDSB from "@/../public/Sponsors/hdsb.jpg";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -154,6 +155,12 @@ export default function Sponsors() {
                         name="Abbey Park"
                         image={APHS}
                         link="https://aph.hdsb.ca/"
+                    />
+
+                    <SponsorBox
+                        name="HDSB"
+                        image={HDSB}
+                        link="https://hdsb.ca/"
                     />
                 </motion.div>
                 <motion.div
