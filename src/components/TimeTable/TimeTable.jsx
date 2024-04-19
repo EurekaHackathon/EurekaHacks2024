@@ -1,5 +1,6 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import styles from "./TimeTable.module.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function TimeTable({
     startTime,
@@ -9,6 +10,7 @@ export default function TimeTable({
     events,
 }) {
     var times = [startTime];
+    const [selectedEvent, setSelectedEvent] = useState(null);
 
     for (;;) {
         let prevTime = times.at(-1);
@@ -29,60 +31,90 @@ export default function TimeTable({
     }
 
     return (
-        <div className={styles.table}>
-            {columnNames.map((name, index) => {
-                return (
-                    <p key={index + 200000} className={styles.columnName}>
-                        {name}
-                    </p>
-                );
-            })}
+        <>
+            <div className={styles.table}>
+                {columnNames.map((name, index) => {
+                    return (
+                        <p key={index + 200000} className={styles.columnName}>
+                            {name}
+                        </p>
+                    );
+                })}
 
-            {times.map((time, index) => {
-                let isHour = !time.minute;
+                {times.map((time, index) => {
+                    let isHour = !time.minute;
 
-                return (
-                    <Fragment key={index}>
-                        <div className={styles.marker}>
-                            <p
-                                className={
-                                    isHour ? styles.isHour : styles.isMinute
-                                }
-                            >
-                                {time.hour <= 12 ? time.hour : time.hour - 12}:
-                                {isHour ? "00" : time.minute}
-                            </p>
-                        </div>
-                        <div className={styles.divider}></div>
-                    </Fragment>
-                );
-            })}
+                    return (
+                        <Fragment key={index}>
+                            <div className={styles.marker}>
+                                <p
+                                    className={
+                                        isHour ? styles.isHour : styles.isMinute
+                                    }
+                                >
+                                    {time.hour <= 12
+                                        ? time.hour
+                                        : time.hour - 12}
+                                    :{isHour ? "00" : time.minute}
+                                </p>
+                            </div>
+                            <div className={styles.divider} />
+                        </Fragment>
+                    );
+                })}
 
-            {events.map((event, index) => {
-                let rowSpan = Math.floor((event.duration / timeInc) * 2);
-                let rowStart = Math.floor(
-                    (((event.start.hour - startTime.hour) * 60 +
-                        event.start.minute -
-                        startTime.minute) /
-                        timeInc) *
-                        2 +
-                        2,
-                );
+                {events.map((event, index) => {
+                    let rowSpan = Math.floor((event.duration / timeInc) * 2);
+                    let rowStart = Math.floor(
+                        (((event.start.hour - startTime.hour) * 60 +
+                            event.start.minute -
+                            startTime.minute) /
+                            timeInc) *
+                            2 +
+                            2,
+                    );
 
-                return (
-                    <div
-                        key={index}
-                        className={styles.slot}
-                        style={{
-                            backgroundColor: event.color,
-                            gridRow: `${rowStart} / span ${rowSpan}`,
-                            gridColumn: event.column,
+                    return (
+                        <motion.div
+                            key={index}
+                            className={styles.slot}
+                            style={{
+                                backgroundColor: event.color,
+                                gridRow: `${rowStart} / span ${rowSpan}`,
+                                gridColumn: event.column,
+                            }}
+                            layoutId={index}
+                            onClick={() => setSelectedEvent(index)}
+                        >
+                            <motion.p>{event.name}</motion.p>
+                        </motion.div>
+                    );
+                })}
+            </div>
+            <AnimatePresence>
+                {selectedEvent && (
+                    <motion.div
+                        className={styles.filter}
+                        transition={{
+                            duration: 0.5,
                         }}
+                        initial={{ backgroundColor: "#00000000" }}
+                        animate={{ backgroundColor: "#00000088" }}
+                        exit={{ backgroundColor: "#00000000" }}
+                        onClick={() => setSelectedEvent(null)}
                     >
-                        <p>{event.name}</p>
-                    </div>
-                );
-            })}
-        </div>
+                        <motion.div
+                            layoutId={selectedEvent}
+                            className={styles.opened}
+                            style={{
+                                borderTopColor: events[selectedEvent].color,
+                            }}
+                        >
+                            <motion.p>{events[selectedEvent].name}</motion.p>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </>
     );
 }

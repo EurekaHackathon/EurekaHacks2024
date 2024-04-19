@@ -56,6 +56,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .slot > p {
@@ -63,4 +64,28 @@
     margin: 0;
     text-align: center;
     font-size: 1em;
+}
+
+.filter {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opened {
+    display: flex;
+    z-index: 10;
+    background-color: var(--light-main-color);
+    border-radius: 0.5em;
+    min-width: 32rem;
+    min-height: 40rem;
+    padding: 0.2rem 1rem;
+    border-top: solid 0.5em;
 }
