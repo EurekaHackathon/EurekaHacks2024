@@ -9,7 +9,8 @@
     text-align: center;
 }
 
-.marker, .divider {
+.marker,
+.divider {
     grid-column: 1;
     height: 25px;
 }
