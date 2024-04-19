@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: auto repeat(5, 1fr);
     gap: 4px 2em;
+    overflow-x: auto;
 }
 
 .columnName {
