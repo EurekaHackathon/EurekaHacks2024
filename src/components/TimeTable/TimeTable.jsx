@@ -73,20 +73,46 @@ export default function TimeTable({
                             2 +
                             2,
                     );
+                    let endTime = {
+                        hour:
+                            event.start.minute + (event.duration % 60) == 60
+                                ? event.start.hour +
+                                  Math.floor(event.duration / 60) + 1
+                                : event.start.hour +
+                                  Math.floor(event.duration / 60),
+                        minute:
+                            event.start.minute + (event.duration % 60) == 60
+                                ? 0
+                                : event.start.minute + (event.duration % 60),
+                    };
 
                     return (
                         <motion.div
-                            key={index}
+                            key={index + 1}
                             className={styles.slot}
                             style={{
                                 backgroundColor: event.color,
                                 gridRow: `${rowStart} / span ${rowSpan}`,
                                 gridColumn: event.column,
                             }}
-                            layoutId={index}
-                            onClick={() => setSelectedEvent(index)}
+                            layoutId={index + 1}
+                            onClick={() => setSelectedEvent(index + 1)}
                         >
                             <motion.p>{event.name}</motion.p>
+                            <motion.p>
+                                {event.start.hour <= 12
+                                    ? event.start.hour
+                                    : event.start.hour - 12}
+                                :
+                                {event.start.minute == 0
+                                    ? "00"
+                                    : event.start.minute}
+                                -
+                                {endTime.hour <= 12
+                                    ? endTime.hour
+                                    : endTime.hour - 12}
+                                :{endTime.minute == 0 ? "00" : endTime.minute}
+                            </motion.p>
                         </motion.div>
                     );
                 })}
@@ -107,10 +133,12 @@ export default function TimeTable({
                             layoutId={selectedEvent}
                             className={styles.opened}
                             style={{
-                                borderTopColor: events[selectedEvent].color,
+                                borderTopColor: events[selectedEvent - 1].color,
                             }}
                         >
-                            <motion.p>{events[selectedEvent].name}</motion.p>
+                            <motion.p>
+                                {events[selectedEvent - 1].name}
+                            </motion.p>
                         </motion.div>
                     </motion.div>
                 )}
