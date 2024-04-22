@@ -1,0 +1,39 @@
+.folder {
+    --sideMargin: 2em;
+    margin: 0 2.5em 0 var(--sideMargin);
+    position: relative;
+}
+
+.folder::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: calc(var(--sideMargin) * -1);
+    height: 80%;
+    width: calc(100% + var(--sideMargin) * 1.5);
+    background-color: var(--lighter-text-color);
+    border-radius: 0 16px 16px 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity ease 400ms;
+}
+
+.folder:hover::before {
+    opacity: 0.4;
+}
+
+.folderTop {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1em;
+}
+
+.folderIcon {
+    color: var(--lighter-text-color);
+    scale: 1.5;
+}
+
+.folderName {
+    font-size: 16px;
+}

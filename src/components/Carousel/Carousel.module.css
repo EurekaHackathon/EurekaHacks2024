@@ -1,0 +1,78 @@
+.carousel {
+    margin: 2em 0;
+    position: relative;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+.images {
+    display: grid;
+    width: 100%;
+    transition: transform 200ms ease-in-out;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.buttonPrev, .buttonNext {
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    bottom: 50%;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: var(--lighter-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    transition: 200ms ease;
+}
+
+.buttonPrev:hover, .buttonNext:hover {
+    filter: brightness(120%);
+}
+
+.buttonPrev {
+    left: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+.buttonNext {
+    right: 0;
+    transform: translateY(50%) translateX(50%);
+}
+
+.progressButtons {
+    margin: 0.5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.progressButton {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    transition: 200ms ease;
+    cursor: pointer;
+}
+
+.progressButton.active {
+    background-color: var(--lighter-text-color);
+}
