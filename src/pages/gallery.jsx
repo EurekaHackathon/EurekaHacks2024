@@ -7,8 +7,6 @@ import Link from "next/link";
 export default function Gallery() {
     const [path, setPath] = useState("C:\\Users\\EurekaHACKS\\2023\\");
 
-    let projects;
-    let presentations;
     return (
         <>
             <div className={styles.gallery}>
@@ -36,7 +34,6 @@ export default function Gallery() {
                     <div className={styles.view}>
                         <div className={styles.content}>
                             <section id="projects">
-                                <div className={projects}>
                                 <h1 className={styles.title}>Projects</h1>
                                 <div className={styles.divider}></div>
                                 <Carousel images={[
