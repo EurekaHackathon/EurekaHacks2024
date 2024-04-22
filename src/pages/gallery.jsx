@@ -42,7 +42,6 @@ export default function Gallery() {
                                     "Gallery/Img_0358.jpg",
                                     "Gallery/Img_0360.jpg",
                                 ]} />
-                                </div>
                             </section>
                             <section id="participants">
                                 <h1 className={styles.title}>Participants</h1>
