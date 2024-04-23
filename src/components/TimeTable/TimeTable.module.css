@@ -12,7 +12,7 @@
 .marker,
 .divider {
     grid-column: 1;
-    height: 25px;
+    height: 40px;
 }
 
 .marker {
@@ -25,6 +25,7 @@
 .marker > p {
     font-size: 1em;
     margin: 0;
+    align-self: start;
 }
 
 .isHour {
@@ -42,11 +43,11 @@
 .divider::after {
     content: "";
     position: absolute;
-    width: 3em;
+    width: 100rem;
     z-index: -10;
     height: 2px;
-    left: calc(50% - 30px);
-    top: calc(50% - 1px);
+    left: calc(50% + 40px);
+    top: calc(50% - 67px);
     background-color: #605c7383;
 }
 

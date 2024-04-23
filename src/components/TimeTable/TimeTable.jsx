@@ -75,15 +75,13 @@ export default function TimeTable({
                     );
                     let endTime = {
                         hour:
-                            event.start.minute + (event.duration % 60) == 60
+                            event.start.minute + (event.duration % 60) >= 60
                                 ? event.start.hour +
                                   Math.floor(event.duration / 60) + 1
                                 : event.start.hour +
                                   Math.floor(event.duration / 60),
                         minute:
-                            event.start.minute + (event.duration % 60) == 60
-                                ? 0
-                                : event.start.minute + (event.duration % 60),
+                            (event.start.minute + (event.duration % 60)) % 60,
                     };
 
                     return (
