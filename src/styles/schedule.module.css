@@ -1,11 +1,17 @@
 .header {
     background: url("../../public/WebsiteMainPhoto2024.png") no-repeat;
     background-size: cover;
-    height: auto;
+    height: 20rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 12rem;
+    }
 }
 
 .curtain {
@@ -24,4 +30,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .schedule {
+        padding: 1rem 1.2rem;
+    }
 }
