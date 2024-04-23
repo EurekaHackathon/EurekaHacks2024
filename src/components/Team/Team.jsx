@@ -13,7 +13,7 @@ const shapeFadeIn = {
         opacity: 1,
         transition: { duration: 1, delay: 0.5 },
     },
-    viewport: { once: true, amount: 1 },
+    viewport: { once: true, amount: 0.8 },
 };
 
 const logoFadeIn = {

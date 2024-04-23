@@ -1,0 +1,27 @@
+.header {
+    background: url("../../public/WebsiteMainPhoto2024.png") no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtain {
+    background: rgba(0, 0, 0, 0.289);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule {
+    margin: auto;
+    padding: 1rem 4rem;
+    max-width: 1366px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

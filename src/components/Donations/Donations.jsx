@@ -1,5 +1,5 @@
 import styles from "@/components/Donations/Donations.module.css";
-import DonateImage from "@/../public/Sponsors/donation.jpg";
+import DonateImage from "@/../public/Sponsors/donation.webp";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/../public/EurekaIcon2024.png";
