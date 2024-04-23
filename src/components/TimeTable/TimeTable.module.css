@@ -86,7 +86,7 @@
     background-color: var(--light-main-color);
     border-radius: 0.5em;
     min-width: 32rem;
-    min-height: 40rem;
+    min-height: 30rem;
     padding: 0.2rem 1rem;
     border-top: solid 0.5em;
 }

@@ -14,7 +14,7 @@ export default function TimeTable({
     const popUpRef = useRef(null);
 
     function handleOutside(event) {
-        if (selectedEvent != null && popUpRef.current && !popUpRef.current.contains(event.target)) {
+        if (popUpRef.current && !popUpRef.current.contains(event.target)) {
             setSelectedEvent(null);
         }
     }
