@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useRef, useEffect } from "react";
 import styles from "./TimeTable.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -11,6 +11,21 @@ export default function TimeTable({
 }) {
     var times = [startTime];
     const [selectedEvent, setSelectedEvent] = useState(null);
+    const popUpRef = useRef(null);
+
+    function handleOutside(event) {
+        if (selectedEvent != null && popUpRef.current && !popUpRef.current.contains(event.target)) {
+            setSelectedEvent(null);
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener("mousedown", handleOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleOutside);
+        };
+    }, []);
 
     for (;;) {
         let prevTime = times.at(-1);
@@ -40,7 +55,6 @@ export default function TimeTable({
                         </p>
                     );
                 })}
-
                 {times.map((time, index) => {
                     let isHour = !time.minute;
 
@@ -62,7 +76,6 @@ export default function TimeTable({
                         </Fragment>
                     );
                 })}
-
                 {events.map((event, index) => {
                     let rowSpan = Math.floor((event.duration / timeInc) * 2);
                     let rowStart = Math.floor(
@@ -77,7 +90,8 @@ export default function TimeTable({
                         hour:
                             event.start.minute + (event.duration % 60) >= 60
                                 ? event.start.hour +
-                                  Math.floor(event.duration / 60) + 1
+                                  Math.floor(event.duration / 60) +
+                                  1
                                 : event.start.hour +
                                   Math.floor(event.duration / 60),
                         minute:
@@ -125,7 +139,6 @@ export default function TimeTable({
                         initial={{ backgroundColor: "#00000000" }}
                         animate={{ backgroundColor: "#00000088" }}
                         exit={{ backgroundColor: "#00000000" }}
-                        onClick={() => setSelectedEvent(null)}
                     >
                         <motion.div
                             layoutId={selectedEvent}
@@ -133,6 +146,7 @@ export default function TimeTable({
                             style={{
                                 borderTopColor: events[selectedEvent - 1].color,
                             }}
+                            ref={popUpRef}
                         >
                             <motion.p>
                                 {events[selectedEvent - 1].name}
