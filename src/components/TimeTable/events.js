@@ -26,6 +26,7 @@ export const timeTableData = {
             },
             column: 2,
             duration: 30,
+            description: "The opening ceronomy will take place in the theater, it will feature a keynote, information about the event, and a few other surprises!"
         },
         {
             name: "Team Finding",

@@ -1,6 +1,7 @@
 import { Fragment, useState, useRef, useEffect } from "react";
 import styles from "./TimeTable.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function TimeTable({
     startTime,
@@ -148,8 +149,41 @@ export default function TimeTable({
                             }}
                             ref={popUpRef}
                         >
-                            <motion.p>
+                            <motion.h3>
                                 {events[selectedEvent - 1].name}
+                            </motion.h3>
+                            <motion.p className={styles.text}>
+                                {events[selectedEvent - 1].description}
+                            </motion.p>
+                            <motion.p className={styles.time}>
+                                {events[selectedEvent - 1].start.hour}:
+                                {events[selectedEvent - 1].start.minute == 0
+                                    ? "00"
+                                    : events[selectedEvent - 1].start.minute}
+                                -
+                                {events[selectedEvent - 1].start.minute +
+                                    (events[selectedEvent - 1].duration % 60) >=
+                                60
+                                    ? events[selectedEvent - 1].start.hour +
+                                      Math.floor(
+                                          events[selectedEvent - 1].duration /
+                                              60,
+                                      ) +
+                                      1
+                                    : events[selectedEvent - 1].start.hour +
+                                      Math.floor(
+                                          events[selectedEvent - 1].duration /
+                                              60,
+                                      )}
+                                :
+                                {(events[selectedEvent - 1].start.minute +
+                                    (events[selectedEvent - 1].duration % 60)) % 60 ==
+                                0
+                                    ? "00"
+                                    : (events[selectedEvent - 1].start.minute +
+                                          (events[selectedEvent - 1].duration %
+                                              60)) %
+                                      60}
                             </motion.p>
                         </motion.div>
                     </motion.div>

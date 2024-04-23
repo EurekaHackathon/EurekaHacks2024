@@ -85,8 +85,24 @@
     z-index: 10;
     background-color: var(--light-main-color);
     border-radius: 0.5em;
-    min-width: 32rem;
+    max-width: 32rem;
     min-height: 30rem;
     padding: 0.2rem 1rem;
     border-top: solid 0.5em;
+    flex-direction: column;
+}
+
+.opened > h3 {
+    margin: 0.3em 0;
+}
+
+.text {
+    font-size: 1em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.time {
+    margin-top: auto;
+    text-align: center;
 }
