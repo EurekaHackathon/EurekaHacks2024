@@ -1,7 +1,7 @@
 import { Fragment, useState, useRef, useEffect } from "react";
 import styles from "./TimeTable.module.css";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function TimeTable({
     startTime,
