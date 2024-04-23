@@ -13,7 +13,8 @@ import Sobeys from "@/../public/Sponsors/sobeys.png";
 import Rotary from "@/../public/Rotary.jpg";
 import Digitalent from "@/../public/Sponsors/digitalent.jpg";
 import Staples from "@/../public/Sponsors/Staples.png";
-import CryptoChicks from '@/../public/Sponsors/cryptochicks.png';
+import CryptoChicks from "@/../public/Sponsors/cryptochicks.png";
+import OTech from "@/../public/Sponsors/Otech.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -88,6 +89,12 @@ export default function Sponsors() {
                         image={WolframAlpha}
                         link="https://www.wolframalpha.com/"
                         className={styles["wolfram"]}
+                    />
+
+                    <SponsorBox
+                        name="Ontario Tech"
+                        image={OTech}
+                        link="https://engineering.ontariotechu.ca/outreach/"
                     />
                 </motion.div>
 
