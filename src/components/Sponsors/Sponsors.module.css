@@ -119,6 +119,11 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.bronze-sponsors > a > img {
+    width: 48px;
+    height: auto;
+}
+
 .sponsor-panel .plat-sponsors .wingsup > img {
     width: 18rem;
     height: auto;
@@ -216,6 +221,11 @@
         width: 20rem;
         height: auto;
     }
+
+    .bronze-sponsors > a > img {
+        width: 8rem;
+        height: auto;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -247,6 +257,11 @@
     /* .bronze-sponsors {
         grid-template-columns: repeat(3, 1fr);
     } */
+
+    .bronze-sponsors > a > img {
+        width: 10rem;
+        height: auto;
+    }
 
     .shape1 {
         top: -1.8rem;
