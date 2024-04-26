@@ -21,6 +21,7 @@ export default function Register() {
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
                 />
                 <title>EurekaHACKS 2024 Registration Form</title>
+
                 <style>
                     {`
                         iframe {
@@ -29,6 +30,11 @@ export default function Register() {
                     `}
                 </style>
             </Head>
+
+            <h1>Temporarily Disabled</h1>
+
+            {/*
+
             <Script
                 id="tally-js"
                 src="https://tally.so/widgets/embed.js"
@@ -36,7 +42,7 @@ export default function Register() {
                     Tally.loadEmbeds();
                 }}
             />
-            <NavBar />
+
             <iframe
                 data-tally-src="https://tally.so/embed/w8xv4A?transparentBackground=1&dynamicHeight=1"
                 width="100%"
@@ -45,6 +51,9 @@ export default function Register() {
                 title="EurekaHACKS 2024 Registration Form"
             />
             <Footer />
+
+            */}
+            <NavBar />
         </div>
     );
 }
