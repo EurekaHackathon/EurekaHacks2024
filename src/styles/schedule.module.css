@@ -53,7 +53,28 @@
 }
 
 .legend-color {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .legend {
+        gap: 0.2rem;
+    }
+
+    .legend-item {
+        margin-right: 0.5rem;
+    }
+    
+    .legend-color {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.2rem;
+    }
+
+    .legend-item > p {
+        font-size: 0.6em;
+    }
 }

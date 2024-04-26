@@ -49,6 +49,10 @@ export default function PrivacyPolicy() {
                         <div className={styles["legend-color"]} style={{ backgroundColor: "var(--terminal-red)" }}></div>
                         <p>Fun Activities</p>
                     </div>
+                    {/* <div className={styles["legend-item"]}>
+                        <div className={styles["legend-color"]} style={{ backgroundColor: "var(--terminal-yellow)" }}></div>
+                        <p>Current Time</p>
+                    </div> */}
                 </div>
             <div className={styles["schedule"]}>
                 <TimeTable {...timeTableData} />
