@@ -17,28 +17,6 @@
     align-items: center;
 }
 
-.code-of-conduct {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: 1rem;
-}
-
-.code-of-conduct > p {
-    font-weight: 400;
-}
-
-.code-of-conduct > h3 {
-    font-weight: 700;
-    font-size: 3rem;
-    text-align: left;
-    color: #22f0e7;
-}
-
-.code-of-conduct > p > a {
-    color: #df71ef;
-    display: inline;
-}
-
 .privacy-policy {
     margin: 0 auto;
     max-width: 1000px;

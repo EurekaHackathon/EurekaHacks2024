@@ -90,14 +90,6 @@ export default function Footer() {
                             <li className={styles.item}>
                                 <Link
                                     className={styles.link}
-                                    href="/code-of-conduct"
-                                >
-                                    Code of Conduct
-                                </Link>
-                            </li>
-                            <li className={styles.item}>
-                                <Link
-                                    className={styles.link}
                                     href="/privacy-policy"
                                 >
                                     Privacy Policy
