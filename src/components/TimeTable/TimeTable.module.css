@@ -86,10 +86,16 @@
     background-color: var(--light-main-color);
     border-radius: 0.5em;
     max-width: 32rem;
-    min-height: 30rem;
+    height: auto;
     padding: 0.2rem 1rem;
     border-top: solid 0.5em;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .opened {
+        max-width: 21rem;
+    }
 }
 
 .opened > h3 {
@@ -103,6 +109,14 @@
 }
 
 .time {
-    margin-top: auto;
+    margin-top: 1em;
     text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+    margin: 1em auto 0 auto;
 }

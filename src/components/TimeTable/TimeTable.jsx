@@ -1,6 +1,7 @@
 import { Fragment, useState, useRef, useEffect } from "react";
 import styles from "./TimeTable.module.css";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 // import Image from "next/image";
 
 export default function TimeTable({
@@ -155,6 +156,14 @@ export default function TimeTable({
                             <motion.p className={styles.text}>
                                 {events[selectedEvent - 1].description}
                             </motion.p>
+                            {events[selectedEvent - 1].images && (
+                                <Image
+                                    src={events[selectedEvent - 1].images[0]}
+                                    alt={events[selectedEvent - 1].name}
+                                    width={500}
+                                    className={styles.image}
+                                />
+                            )}
                             <motion.p className={styles.time}>
                                 {events[selectedEvent - 1].start.hour}:
                                 {events[selectedEvent - 1].start.minute == 0
@@ -177,7 +186,8 @@ export default function TimeTable({
                                       )}
                                 :
                                 {(events[selectedEvent - 1].start.minute +
-                                    (events[selectedEvent - 1].duration % 60)) % 60 ==
+                                    (events[selectedEvent - 1].duration % 60)) %
+                                    60 ==
                                 0
                                     ? "00"
                                     : (events[selectedEvent - 1].start.minute +
