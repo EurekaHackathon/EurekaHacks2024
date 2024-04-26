@@ -52,14 +52,6 @@ export default function Footer() {
                             >
                                 <BsTiktok />
                             </motion.a>
-
-                            <motion.a
-                                className={styles.discord}
-                                href="https://discord.gg/nff6VueNgk"
-                                {...iconAnimations}
-                            >
-                                <BsDiscord />
-                            </motion.a>
                         </div>
                     </div>
                     <div>
