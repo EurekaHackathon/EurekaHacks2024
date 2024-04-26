@@ -26,7 +26,7 @@ export const timeTableData = {
     events: [
         {
             name: "Opening Ceremony",
-            color: "var(--terminal-red)",
+            color: "var(--terminal-green)",
             start: {
                 hour: 8,
                 minute: 0,
@@ -39,7 +39,7 @@ export const timeTableData = {
         },
         {
             name: "Team Finding",
-            color: "var(--terminal-red)",
+            color: "var(--terminal-blue)",
             start: {
                 hour: 8,
                 minute: 30,
@@ -51,7 +51,7 @@ export const timeTableData = {
         },
         {
             name: "Idea Brainstorm",
-            color: "var(--terminal-red)",
+            color: "var(--terminal-blue)",
             start: {
                 hour: 8,
                 minute: 45,
