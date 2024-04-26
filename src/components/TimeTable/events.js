@@ -286,5 +286,17 @@ export const timeTableData = {
             description:
                 "Let our artists transform your face into a work of art.",
         },
+        {
+            name: "Judging",
+            color: "var(--terminal-green)",
+            start: {
+                hour: 20,
+                minute: 0,
+            },
+            duration: 75,
+            column: 6,
+            description:
+                "Judges will evaluate the projects created by participants and determine the winners.",
+        },
     ],
 };
