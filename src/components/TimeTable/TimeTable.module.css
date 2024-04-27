@@ -45,7 +45,7 @@
     position: absolute;
     width: 81rem;
     z-index: -10;
-    height: 2px;
+    height: 1.5px;
     left: calc(50% + 40px);
     top: calc(50% - 67px);
     background-color: #605c7383;
@@ -55,6 +55,11 @@
     background-color: var(--terminal-yellow);
     height: 6px;
     border-radius: 6px;
+}
+
+.divider:nth-child(4n)::after {
+    background-color: #5c5c70;
+    height: 2px;
 }
 
 .slot {
