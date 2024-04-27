@@ -6,6 +6,8 @@ import orbit from "../../../public/Schedule/orbit.jpg";
 import aiLecture from "../../../public/Schedule/aiWorkshop.jpg";
 import painting from "../../../public/Schedule/painting.jpg";
 import closing from "../../../public/Schedule/closing.jpg";
+import teams from "../../../public/Schedule/teams.jpg";
+import git from "../../../public/Schedule/git.png";
 
 export const timeTableData = {
     startTime: {
@@ -60,6 +62,7 @@ export const timeTableData = {
             },
             column: 2,
             duration: 15,
+            images: [teams],
             description:
                 "Allocated time where participants connect with like-minded individuals to form teams to collaborate on a project for the event. Whether you're a developer, designer, or enthusiast, this is your chance to find a team to build something incredible together.",
         },
@@ -85,8 +88,9 @@ export const timeTableData = {
             },
             column: 2,
             duration: 15,
+            images: [git],
             description:
-                "Learn about the fundamentals of Git, the cornerstone of modern software development. Join us for a session where you'll learn basics, essential commands, and efficient collaboration practices.",
+                "New to Git? Join us for a workshop on the essentials of Git, the version control system that powers modern software development. Learn the basics, best practices, and how to collaborate effectively with your team using Git.",
         },
         {
             name: "Robotics with Orbit 1360",
