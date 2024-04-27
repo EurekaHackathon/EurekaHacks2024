@@ -71,8 +71,9 @@ export default function NavBar() {
                 className={styles["register-outline"]}
             >
                 <Link
-                    href="/register"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeLouKj4q5cLLsnMwZhTWwo027iXjCKwGsPpKuTPrfHDM0lmw/viewform"
                     prefetch={false}
+                    target="_blank"
                     className={styles["register"]}
                 >
                     <div className={styles["button"]}>Register</div>
