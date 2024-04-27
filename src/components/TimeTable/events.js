@@ -8,6 +8,8 @@ import painting from "../../../public/Schedule/painting.jpg";
 import closing from "../../../public/Schedule/closing.jpg";
 import teams from "../../../public/Schedule/teams.jpg";
 import git from "../../../public/Schedule/git.png";
+import quantum from "../../../public/Schedule/quantumComputing.jpg";
+import mario from "../../../public/Schedule/mario.jpg";
 
 export const timeTableData = {
     startTime: {
@@ -186,6 +188,7 @@ export const timeTableData = {
             },
             column: 3,
             duration: 60,
+            images: [quantum],
             description:
                 "Explore the next step of computing with an introductory session on quantum mechanics and its applications in computing. Join us to understand the mysteries of qubits, quantum algorithms, and the potential of this groundbreaking technology.",
         },
@@ -198,6 +201,7 @@ export const timeTableData = {
             },
             column: 4,
             duration: 60,
+            images: [mario],
             description:
                 "Rev up your engines and prepare for a racing session with your peers.  Race to victory and claim the desired first place!",
         },
