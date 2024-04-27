@@ -51,6 +51,11 @@
     background-color: #605c7383;
 }
 
+.divider:nth-child(56)::after {
+    background-color: var(--terminal-yellow);
+    height: 6px;
+}
+
 .slot {
     border-radius: 0.4em;
     display: flex;
