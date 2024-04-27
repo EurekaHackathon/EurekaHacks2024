@@ -4,6 +4,8 @@ import superSmashBros from "../../../public/Schedule/superSmashBros.jpg";
 import chess from "../../../public/Schedule/chess.jpg";
 import orbit from "../../../public/Schedule/orbit.jpg";
 import aiLecture from "../../../public/Schedule/aiWorkshop.jpg";
+import painting from "../../../public/Schedule/painting.jpg";
+import closing from "../../../public/Schedule/closing.jpg";
 
 export const timeTableData = {
     startTime: {
@@ -32,17 +34,29 @@ export const timeTableData = {
                 minute: 0,
             },
             column: 2,
-            duration: 30,
+            duration: 45,
             images: [openingCeremony],
             description:
                 "The opening ceremony will take place in the theater, it will feature a keynote, information about the event, and a few other surprises!",
+        },
+        {
+            name: "Scavenger Hunt Starts",
+            color: "var(--terminal-red)",
+            start: {
+                hour: 8,
+                minute: 30,
+            },
+            column: 6,
+            duration: 30,
+            description:
+                "Join us for a scavenger hunt, where you explore the school to solve clues, complete challenges, and race against the clock. Gather your friends, sharpen your mind, and try to win!",
         },
         {
             name: "Team Finding",
             color: "var(--terminal-blue)",
             start: {
                 hour: 8,
-                minute: 30,
+                minute: 45,
             },
             column: 2,
             duration: 15,
@@ -53,8 +67,8 @@ export const timeTableData = {
             name: "Idea Brainstorm",
             color: "var(--terminal-blue)",
             start: {
-                hour: 8,
-                minute: 45,
+                hour: 9,
+                minute: 0,
             },
             column: 2,
             duration: 30,
@@ -67,7 +81,7 @@ export const timeTableData = {
             color: "var(--terminal-blue)",
             start: {
                 hour: 9,
-                minute: 15,
+                minute: 30,
             },
             column: 2,
             duration: 15,
@@ -75,7 +89,7 @@ export const timeTableData = {
                 "Learn about the fundamentals of Git, the cornerstone of modern software development. Join us for a session where you'll learn basics, essential commands, and efficient collaboration practices.",
         },
         {
-            name: "Intro to Block Chain With Cryptochicks",
+            name: "Robotics with Orbit 1360",
             color: "var(--terminal-blue)",
             start: {
                 hour: 9,
@@ -83,8 +97,22 @@ export const timeTableData = {
             },
             column: 3,
             duration: 60,
+            images: [orbit],
             description:
-                "Discover the revolutionary world of blockchain technology with CryptoChicks. Dive into the basics, explore its applications, and learn how to get started.",
+                "Explore the world of robotics with Orbit 1360: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles.",
+        },
+        {
+            name: "Face & Banner Painting",
+            color: "var(--terminal-red)",
+            start: {
+                hour: 9,
+                minute: 30,
+            },
+            column: 6,
+            duration: 120,
+            description:
+                "Let our artists transform your face into a work of art.",
+            images: [painting],
         },
         {
             name: "Smash Bros Tournament",
@@ -100,30 +128,6 @@ export const timeTableData = {
                 "Battle it out in the ultimate showdown of skill and strategy! Compete against fellow gamers in a Super Smash Bros tournament. Are you ready to claim the title of champion?",
         },
         {
-            name: "Intro to Quantum Computing",
-            color: "var(--terminal-blue)",
-            start: {
-                hour: 11,
-                minute: 45,
-            },
-            column: 3,
-            duration: 60,
-            description:
-                "Explore the next step of computing with an introductory session on quantum mechanics and its applications in computing. Join us to understand the mysteries of qubits, quantum algorithms, and the potential of this groundbreaking technology.",
-        },
-        {
-            name: "Mario Kart Tournament",
-            color: "var(--terminal-red)",
-            start: {
-                hour: 12,
-                minute: 0,
-            },
-            column: 4,
-            duration: 60,
-            description:
-                "Rev up your engines and prepare for a racing session with your peers.  Race to victory and claim the desired first place!",
-        },
-        {
             name: "Lunch",
             color: "var(--terminal-green)",
             start: {
@@ -134,7 +138,7 @@ export const timeTableData = {
             duration: 60,
         },
         {
-            name: "Robotics with Orbit 1360",
+            name: "Intro to Block Chain With Cryptochicks",
             color: "var(--terminal-blue)",
             start: {
                 hour: 14,
@@ -142,9 +146,8 @@ export const timeTableData = {
             },
             column: 3,
             duration: 60,
-            images: [orbit],
             description:
-                "Explore the world of robotics with Orbit 1360: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles.",
+                "Discover the revolutionary world of blockchain technology with CryptoChicks. Dive into the basics, explore its applications, and learn how to get started.",
         },
         {
             name: "Reach Trivia",
@@ -169,6 +172,30 @@ export const timeTableData = {
             duration: 45,
             description:
                 "Get ready to serve up some fun! Compete in our Ping Pong Tournament, where players of any level can showcase their skills, enjoy competition, and aim for the win! Note that we can only have 16 players, sign up will begin 1 hour before the event.",
+        },
+        {
+            name: "Intro to Quantum Computing",
+            color: "var(--terminal-blue)",
+            start: {
+                hour: 11,
+                minute: 45,
+            },
+            column: 3,
+            duration: 60,
+            description:
+                "Explore the next step of computing with an introductory session on quantum mechanics and its applications in computing. Join us to understand the mysteries of qubits, quantum algorithms, and the potential of this groundbreaking technology.",
+        },
+        {
+            name: "Mario Kart Tournament",
+            color: "var(--terminal-red)",
+            start: {
+                hour: 12,
+                minute: 0,
+            },
+            column: 4,
+            duration: 60,
+            description:
+                "Rev up your engines and prepare for a racing session with your peers.  Race to victory and claim the desired first place!",
         },
         {
             name: "Lecture on AI",
@@ -250,7 +277,7 @@ export const timeTableData = {
                 minute: 0,
             },
             column: 5,
-            duration: 30,
+            duration: 90,
         },
         {
             name: "Closing Ceremony",
@@ -260,31 +287,10 @@ export const timeTableData = {
                 minute: 30,
             },
             column: 2,
-            duration: 30,
-        },
-        {
-            name: "Scavenger Hunt Starts",
-            color: "var(--terminal-red)",
-            start: {
-                hour: 8,
-                minute: 30,
-            },
-            column: 6,
-            duration: 30,
+            duration: 15,
             description:
-                "Join us for a scavenger hunt, where you explore the school to solve clues, complete challenges, and race against the clock. Gather your friends, sharpen your mind, and try to win!",
-        },
-        {
-            name: "Face & Banner Painting",
-            color: "var(--terminal-red)",
-            start: {
-                hour: 9,
-                minute: 30,
-            },
-            column: 6,
-            duration: 30,
-            description:
-                "Let our artists transform your face into a work of art.",
+                "Don't miss the closing ceremony! We'll announce the winners of the event, share highlights, and celebrate the incredible projects created by participants. Join us for a memorable conclusion to EurekaHacks 2024.",
+            images: [closing],
         },
         {
             name: "Judging",
@@ -293,7 +299,7 @@ export const timeTableData = {
                 hour: 20,
                 minute: 0,
             },
-            duration: 75,
+            duration: 90,
             column: 6,
             description:
                 "Judges will evaluate the projects created by participants and determine the winners.",
