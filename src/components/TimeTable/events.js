@@ -10,6 +10,7 @@ import teams from "../../../public/Schedule/teams.jpg";
 import git from "../../../public/Schedule/git.png";
 import quantum from "../../../public/Schedule/quantumComputing.jpg";
 import mario from "../../../public/Schedule/mario.jpg";
+import cryptochicks from "../../../public/Schedule/cryptochicks.png";
 
 export const timeTableData = {
     startTime: {
@@ -142,6 +143,7 @@ export const timeTableData = {
             },
             column: 5,
             duration: 60,
+            description: "Enjoy 2 slices of pizza from Domino's!"
         },
         {
             name: "Intro to Block Chain With Cryptochicks",
@@ -152,6 +154,7 @@ export const timeTableData = {
             },
             column: 3,
             duration: 60,
+            images: [cryptochicks],
             description:
                 "Discover the revolutionary world of blockchain technology with CryptoChicks. Dive into the basics, explore its applications, and learn how to get started.",
         },
@@ -227,6 +230,7 @@ export const timeTableData = {
             },
             column: 4,
             duration: 45,
+            description: "Join us for a game of Among Us!",
         },
         {
             name: "Chess Tournament",
@@ -286,6 +290,7 @@ export const timeTableData = {
             },
             column: 5,
             duration: 90,
+            description: "Dinner will include a sandwich, 2 wings, and fries, all from WingsUp!"
         },
         {
             name: "Closing Ceremony",
