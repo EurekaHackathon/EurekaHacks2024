@@ -164,7 +164,10 @@ export default function TimeTable({
                                 />
                             )}
                             <motion.p className={styles.time}>
-                                {events[selectedEvent - 1].start.hour}:
+                                {events[selectedEvent - 1].start.hour > 12
+                                    ? events[selectedEvent - 1].start.hour - 12
+                                    : events[selectedEvent - 1].start.hour}
+                                :
                                 {events[selectedEvent - 1].start.minute == 0
                                     ? "00"
                                     : events[selectedEvent - 1].start.minute}
@@ -178,6 +181,18 @@ export default function TimeTable({
                                               60,
                                       ) +
                                       1
+                                    : events[selectedEvent - 1].start.hour +
+                                          Math.floor(
+                                              events[selectedEvent - 1]
+                                                  .duration / 60,
+                                          ) >
+                                      12
+                                    ? events[selectedEvent - 1].start.hour +
+                                      Math.floor(
+                                          events[selectedEvent - 1].duration /
+                                              60,
+                                      ) -
+                                      12
                                     : events[selectedEvent - 1].start.hour +
                                       Math.floor(
                                           events[selectedEvent - 1].duration /
