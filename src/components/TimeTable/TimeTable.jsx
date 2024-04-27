@@ -110,6 +110,11 @@ export default function TimeTable({
                             }}
                             layoutId={index + 1}
                             onClick={() => setSelectedEvent(index + 1)}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            transition={{
+                                duration: 0.2,
+                            }}
                         >
                             <motion.p>{event.name}</motion.p>
                             <motion.p>
