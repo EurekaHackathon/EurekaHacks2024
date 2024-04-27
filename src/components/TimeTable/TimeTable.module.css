@@ -54,6 +54,7 @@
 .divider:nth-child(56)::after {
     background-color: var(--terminal-yellow);
     height: 6px;
+    border-radius: 6px;
 }
 
 .slot {
