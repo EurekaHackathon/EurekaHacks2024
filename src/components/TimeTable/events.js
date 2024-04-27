@@ -88,7 +88,7 @@ export const timeTableData = {
         },
         {
             name: "Smash Bros Tournament",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 10,
                 minute: 30,
@@ -113,7 +113,7 @@ export const timeTableData = {
         },
         {
             name: "Mario Kart Tournament",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 12,
                 minute: 0,
@@ -125,7 +125,7 @@ export const timeTableData = {
         },
         {
             name: "Lunch",
-            color: "var(--terminal-red)",
+            color: "var(--terminal-green)",
             start: {
                 hour: 13,
                 minute: 0,
@@ -134,7 +134,7 @@ export const timeTableData = {
             duration: 60,
         },
         {
-            name: "Robotics with Orbit 3160",
+            name: "Robotics with Orbit 1360",
             color: "var(--terminal-blue)",
             start: {
                 hour: 14,
@@ -144,11 +144,11 @@ export const timeTableData = {
             duration: 60,
             images: [orbit],
             description:
-                "Explore the world of robotics with Orbit 3160: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles.",
+                "Explore the world of robotics with Orbit 1360: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles.",
         },
         {
             name: "Reach Trivia",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 14,
                 minute: 0,
@@ -160,15 +160,15 @@ export const timeTableData = {
         },
         {
             name: "Ping Pong Tournament",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 15,
                 minute: 0,
             },
-            column: 4,
+            column: 5,
             duration: 45,
             description:
-                "Get ready to serve up some fun! Compete in our Ping Pong Tournament, where players of any level can showcase their skills, enjoy competition, and aim for the win!",
+                "Get ready to serve up some fun! Compete in our Ping Pong Tournament, where players of any level can showcase their skills, enjoy competition, and aim for the win! Note that we can only have 16 players, sign up will begin 1 hour before the event.",
         },
         {
             name: "Lecture on AI",
@@ -184,8 +184,8 @@ export const timeTableData = {
                 "Delve into the world of Artificial Intelligence in our engaging lecture. Discover the principles, applications, and future trends shaping AI technology. Whether you're a novice or an expert, this session offers insights that will expand your understanding of this field.",
         },
         {
-            name: "City Guesser",
-            color: "var(--terminal-green)",
+            name: "Among Us",
+            color: "var(--terminal-red)",
             start: {
                 hour: 16,
                 minute: 0,
@@ -195,7 +195,7 @@ export const timeTableData = {
         },
         {
             name: "Chess Tournament",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 17,
                 minute: 0,
@@ -208,7 +208,7 @@ export const timeTableData = {
         },
         {
             name: "TypeRacer",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 18,
                 minute: 30,
@@ -220,7 +220,7 @@ export const timeTableData = {
         },
         {
             name: "Karaoke/Lounge",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 19,
                 minute: 0,
@@ -232,7 +232,7 @@ export const timeTableData = {
         },
         {
             name: "Hot Wings Challenge",
-            color: "var(--terminal-green)",
+            color: "var(--terminal-red)",
             start: {
                 hour: 20,
                 minute: 0,
@@ -244,7 +244,7 @@ export const timeTableData = {
         },
         {
             name: "Dinner",
-            color: "var(--terminal-red)",
+            color: "var(--terminal-green)",
             start: {
                 hour: 20,
                 minute: 0,
@@ -254,7 +254,7 @@ export const timeTableData = {
         },
         {
             name: "Closing Ceremony",
-            color: "var(--terminal-red)",
+            color: "var(--terminal-green)",
             start: {
                 hour: 21,
                 minute: 30,
