@@ -73,6 +73,11 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li className={styles.item}>
+                                <Link className={styles.link} href="/schedule">
+                                    Schedule
+                                </Link>
+                            </li>
+                            <li className={styles.item}>
                                 <Link
                                     className={styles.link}
                                     href="/sponsorship-package.pdf"
