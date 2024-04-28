@@ -18,6 +18,7 @@ import OTech from "@/../public/Sponsors/Otech.png";
 import NoFrills from "@/../public/Sponsors/olegs.png";
 import HDSB from "@/../public/Sponsors/hdsb.jpg";
 import FRC from "@/../public/Sponsors/frc.png";
+import ISTORM from "@/../public/Sponsors/istorm-logo.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -80,6 +81,12 @@ export default function Sponsors() {
                         name="Digitalent"
                         image={Digitalent}
                         link="https://www.hiredigitalent.com/"
+                    />
+
+                    <SponsorBox
+                        name="iStorm"
+                        image={ISTORM}
+                        link="https://www.istorm.ca/"
                     />
                 </motion.div>
 
