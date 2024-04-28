@@ -43,12 +43,18 @@
 .divider::after {
     content: "";
     position: absolute;
-    width: 81rem;
+    width: 82rem;
     z-index: -10;
     height: 1.5px;
     left: calc(50% + 40px);
     top: calc(50% - 67px);
     background-color: #605c7383;
+}
+
+@media (max-width: 768px) {
+    .divider::after {
+        width: 41rem;
+    }
 }
 
 .divider:nth-child(4n)::after {
