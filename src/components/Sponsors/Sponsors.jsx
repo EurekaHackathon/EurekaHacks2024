@@ -17,6 +17,7 @@ import CryptoChicks from "@/../public/Sponsors/cryptochicks.png";
 import OTech from "@/../public/Sponsors/Otech.png";
 import NoFrills from "@/../public/Sponsors/olegs.png";
 import HDSB from "@/../public/Sponsors/hdsb.jpg";
+import FRC from "@/../public/Sponsors/frc.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -168,6 +169,12 @@ export default function Sponsors() {
                         name="HDSB"
                         image={HDSB}
                         link="https://hdsb.ca/"
+                    />
+
+                    <SponsorBox
+                        name="1360 Robotics"
+                        image={FRC}
+                        link="https://1360.ca/"
                     />
                 </motion.div>
                 <motion.div
