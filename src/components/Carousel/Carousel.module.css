@@ -23,7 +23,8 @@
     height: auto;
 }
 
-.buttonPrev, .buttonNext {
+.buttonPrev,
+.buttonNext {
     background-color: var(--main-bg-color);
     border-radius: 50%;
     position: absolute;
@@ -42,7 +43,8 @@
     transition: 200ms ease;
 }
 
-.buttonPrev:hover, .buttonNext:hover {
+.buttonPrev:hover,
+.buttonNext:hover {
     filter: brightness(120%);
 }
 

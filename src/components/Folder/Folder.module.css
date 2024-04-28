@@ -5,7 +5,7 @@
 }
 
 .folder::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 10%;
     left: calc(var(--sideMargin) * -1);

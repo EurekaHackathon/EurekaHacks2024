@@ -143,7 +143,7 @@ export const timeTableData = {
             },
             column: 5,
             duration: 60,
-            description: "Enjoy 2 slices of pizza from Domino's!"
+            description: "Enjoy 2 slices of pizza from Domino's!",
         },
         {
             name: "Intro to Block Chain With Cryptochicks",
@@ -290,7 +290,8 @@ export const timeTableData = {
             },
             column: 5,
             duration: 90,
-            description: "Dinner will include a sandwich, 2 wings, and fries, all from WingsUp!"
+            description:
+                "Dinner will include a sandwich, 2 wings, and fries, all from WingsUp!",
         },
         {
             name: "Closing Ceremony",

@@ -37,23 +37,35 @@ export default function PrivacyPolicy() {
                 </div>
             </div>
             <div className={styles["legend"]}>
-                    <div className={styles["legend-item"]}>
-                        <div className={styles["legend-color"]} style={{ backgroundColor: "var(--terminal-green)" }}></div>
-                        <p>Important Events</p>
-                    </div>
-                    <div className={styles["legend-item"]}>
-                        <div className={styles["legend-color"]} style={{ backgroundColor: "var(--terminal-blue)" }}></div>
-                        <p>Workshops</p>
-                    </div>
-                    <div className={styles["legend-item"]}>
-                        <div className={styles["legend-color"]} style={{ backgroundColor: "var(--terminal-red)" }}></div>
-                        <p>Fun Activities</p>
-                    </div>
-                    <div className={styles["legend-item"]}>
-                        <div className={styles["legend-color"]} style={{ backgroundColor: "var(--terminal-yellow)" }}></div>
-                        <p>Judging Deadline</p>
-                    </div>
+                <div className={styles["legend-item"]}>
+                    <div
+                        className={styles["legend-color"]}
+                        style={{ backgroundColor: "var(--terminal-green)" }}
+                    />
+                    <p>Important Events</p>
                 </div>
+                <div className={styles["legend-item"]}>
+                    <div
+                        className={styles["legend-color"]}
+                        style={{ backgroundColor: "var(--terminal-blue)" }}
+                    />
+                    <p>Workshops</p>
+                </div>
+                <div className={styles["legend-item"]}>
+                    <div
+                        className={styles["legend-color"]}
+                        style={{ backgroundColor: "var(--terminal-red)" }}
+                    />
+                    <p>Fun Activities</p>
+                </div>
+                <div className={styles["legend-item"]}>
+                    <div
+                        className={styles["legend-color"]}
+                        style={{ backgroundColor: "var(--terminal-yellow)" }}
+                    />
+                    <p>Judging Deadline</p>
+                </div>
+            </div>
             <div className={styles["schedule"]}>
                 <TimeTable {...timeTableData} />
             </div>
