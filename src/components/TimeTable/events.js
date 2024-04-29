@@ -146,6 +146,17 @@ export const timeTableData = {
             description: "Enjoy 2 slices of pizza from Domino's!",
         },
         {
+            name: "Ice Cream Truck",
+            color: "var(--terminal-green",
+            start: {
+                hour: 13,
+                minute: 0,
+            },
+            column: 6,
+            duration: 120,
+            description: "Cool down with some ice cream from the ice cream truck!"
+        },
+        {
             name: "Intro to Block Chain With Cryptochicks",
             color: "var(--terminal-blue)",
             start: {
