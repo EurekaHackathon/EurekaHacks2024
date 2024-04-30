@@ -100,7 +100,7 @@ export const timeTableData = {
             color: "var(--terminal-blue)",
             start: {
                 hour: 9,
-                minute: 30,
+                minute: 45,
             },
             column: 3,
             duration: 60,
@@ -126,7 +126,7 @@ export const timeTableData = {
             color: "var(--terminal-red)",
             start: {
                 hour: 10,
-                minute: 30,
+                minute: 45,
             },
             column: 4,
             duration: 60,
