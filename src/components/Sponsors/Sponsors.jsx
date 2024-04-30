@@ -19,6 +19,8 @@ import NoFrills from "@/../public/Sponsors/olegs.png";
 import HDSB from "@/../public/Sponsors/hdsb.jpg";
 import FRC from "@/../public/Sponsors/frc.png";
 import ISTORM from "@/../public/Sponsors/istorm-logo.png";
+import Film from "@/../public/Sponsors/film.jpg";
+import Shoppers from "@/../public/Sponsors/Shoppers.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -130,6 +132,12 @@ export default function Sponsors() {
                         image={NoFrills}
                         link="https://www.nofrills.ca/store-locator/details/3150"
                     />
+
+                    <SponsorBox
+                        name="Shoppers"
+                        image={Shoppers}
+                        link="https://www.shoppersdrugmart.ca/"
+                    />
                 </motion.div>
 
                 <motion.div
@@ -139,7 +147,7 @@ export default function Sponsors() {
                     <SponsorBox
                         name="Echo3D"
                         image={Echo3D}
-                        link="https://www.sobeys.com/"
+                        link="https://www.echo3d.com/"
                     />
 
                     <SponsorBox
@@ -158,6 +166,12 @@ export default function Sponsors() {
                         name="CryptoChicks"
                         image={CryptoChicks}
                         link="https://www.cryptochicks.ca//"
+                    />
+
+                    <SponsorBox
+                        name="Film.ca"
+                        image={Film}
+                        link="https://www.film.ca//"
                     />
                 </motion.div>
 
