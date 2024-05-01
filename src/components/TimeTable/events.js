@@ -167,7 +167,7 @@ export const timeTableData = {
             duration: 60,
             images: [cryptochicks],
             description:
-                "Discover the revolutionary world of blockchain technology with CryptoChicks. Dive into the basics, explore its applications, and learn how to get started.",
+                "In today’s “Intro to Blockchain” session, participants will learn all about blockchain basics— what it is, how it works, and why it matters. This session will focus on the main motivations behind blockchain including consensus, security, and decentralization as well as its practical use cases such as cryptocurrencies. Participants will also dive into the transition from Web 2.0 to Web 3.0 and see live demonstrations of blockchain in action.",
         },
         {
             name: "Reach Trivia",
@@ -194,7 +194,7 @@ export const timeTableData = {
                 "Get ready to serve up some fun! Compete in our Ping Pong Tournament, where players of any level can showcase their skills, enjoy competition, and aim for the win! Note that we can only have 16 players, sign up will begin 1 hour before the event.",
         },
         {
-            name: "Intro to Quantum Computing",
+            name: "UofT Quantum Computing Club",
             color: "var(--terminal-blue)",
             start: {
                 hour: 11,
@@ -220,7 +220,7 @@ export const timeTableData = {
                 "Rev up your engines and prepare for a racing session with your peers.  Race to victory and claim the desired first place!",
         },
         {
-            name: "Lecture on AI",
+            name: "AI Presentation with Shashibushan Yenkanchi",
             color: "var(--terminal-blue)",
             start: {
                 hour: 16,
