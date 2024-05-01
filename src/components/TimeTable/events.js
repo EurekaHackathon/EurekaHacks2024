@@ -89,7 +89,7 @@ export const timeTableData = {
                 hour: 9,
                 minute: 30,
             },
-            column: 2,
+            column: 3,
             duration: 15,
             images: [git],
             description:
