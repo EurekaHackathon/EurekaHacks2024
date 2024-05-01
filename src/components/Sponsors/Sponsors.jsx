@@ -22,6 +22,7 @@ import ISTORM from "@/../public/Sponsors/istorm-logo.png";
 import Film from "@/../public/Sponsors/film.jpg";
 import Shoppers from "@/../public/Sponsors/Shoppers.png";
 import Tims from "@/../public/Sponsors/TH.png";
+import FB from "@/../public/Sponsors/foodbasics.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -135,12 +136,6 @@ export default function Sponsors() {
                     />
 
                     <SponsorBox
-                        name="Shoppers"
-                        image={Shoppers}
-                        link="https://www.shoppersdrugmart.ca/"
-                    />
-
-                    <SponsorBox
                         name="Tim Hortons"
                         image={Tims}
                         link="https://www.timhortons.ca/"
@@ -179,6 +174,18 @@ export default function Sponsors() {
                         name="Film.ca"
                         image={Film}
                         link="https://www.film.ca//"
+                    />
+
+                    <SponsorBox
+                        name="Shoppers"
+                        image={Shoppers}
+                        link="https://www.shoppersdrugmart.ca/en/store-locator/store/1271"
+                    />
+
+                    <SponsorBox
+                        name="Food Basics"
+                        image={FB}
+                        link="https://www.foodbasics.ca/"
                     />
                 </motion.div>
 
