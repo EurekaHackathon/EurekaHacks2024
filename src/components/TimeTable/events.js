@@ -185,7 +185,7 @@ export const timeTableData = {
             name: "Ping Pong Tournament",
             color: "var(--terminal-red)",
             start: {
-                hour: 15,
+                hour: 16,
                 minute: 0,
             },
             column: 5,
@@ -236,8 +236,8 @@ export const timeTableData = {
             name: "Among Us",
             color: "var(--terminal-red)",
             start: {
-                hour: 16,
-                minute: 0,
+                hour: 15,
+                minute: 15,
             },
             column: 4,
             duration: 45,
