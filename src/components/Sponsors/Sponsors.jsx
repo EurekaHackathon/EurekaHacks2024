@@ -20,9 +20,10 @@ import HDSB from "@/../public/Sponsors/hdsb.jpg";
 import FRC from "@/../public/Sponsors/frc.png";
 import ISTORM from "@/../public/Sponsors/istorm-logo.png";
 import Film from "@/../public/Sponsors/film.jpg";
-import Shoppers from "@/../public/Sponsors/Shoppers.png";
+import Shoppers1271 from "@/../public/Sponsors/Shoppers.png";
 import Tims from "@/../public/Sponsors/TH.png";
 import FB from "@/../public/Sponsors/foodbasics.png";
+import Shoppers1203 from "@/../public/Sponsors/Shoppers1203.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -140,6 +141,12 @@ export default function Sponsors() {
                         image={Tims}
                         link="https://www.timhortons.ca/"
                     />
+
+                    <SponsorBox
+                        name="Shoppers1203"
+                        image={Shoppers1203}
+                        link="https://www.shoppersdrugmart.ca/en/store-locator/store/1203"
+                    />
                 </motion.div>
 
                 <motion.div
@@ -177,8 +184,8 @@ export default function Sponsors() {
                     />
 
                     <SponsorBox
-                        name="Shoppers"
-                        image={Shoppers}
+                        name="Shoppers1271"
+                        image={Shoppers1271}
                         link="https://www.shoppersdrugmart.ca/en/store-locator/store/1271"
                     />
 
