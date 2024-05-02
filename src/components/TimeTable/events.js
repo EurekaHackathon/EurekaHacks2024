@@ -96,7 +96,7 @@ export const timeTableData = {
                 "New to Git? Join us for a workshop on the essentials of Git, the version control system that powers modern software development. Learn the basics, best practices, and how to collaborate effectively with your team using Git.",
         },
         {
-            name: "Robotics with Orbit 1360",
+            name: "Robotics with Orbit 1360 (GYM)",
             color: "var(--terminal-blue)",
             start: {
                 hour: 9,
@@ -106,7 +106,7 @@ export const timeTableData = {
             duration: 60,
             images: [orbit],
             description:
-                "Explore the world of robotics with Orbit 1360: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles.",
+                "Explore the world of robotics with Orbit 1360: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles. This event has been moved to the Gym.",
         },
         {
             name: "Face & Banner Painting",
@@ -244,7 +244,7 @@ export const timeTableData = {
             description: "Join us for a game of Among Us!",
         },
         {
-            name: "Chess Tournament",
+            name: "Blitz Chess Tournament",
             color: "var(--terminal-red)",
             start: {
                 hour: 17,
@@ -254,7 +254,7 @@ export const timeTableData = {
             duration: 60,
             images: [chess],
             description:
-                "Prepare to make your moves and outwit your opponents in our chess tournament! Whether you're a seasoned grandmaster or a beginner, join us for an hour of strategic battles and intense competition.",
+                "Prepare to make your moves and outwit your opponents in our chess tournament! Whether you're a seasoned grandmaster or a beginner, join us for an hour of strategic battles and intense competition. Time controls will be 3-5 minutes with no increment.",
         },
         {
             name: "TypeRacer",
@@ -285,7 +285,7 @@ export const timeTableData = {
             color: "var(--terminal-red)",
             start: {
                 hour: 20,
-                minute: 0,
+                minute: 30,
             },
             column: 4,
             duration: 60,
