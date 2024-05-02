@@ -189,7 +189,7 @@ export const timeTableData = {
                 minute: 0,
             },
             column: 5,
-            duration: 45,
+            duration: 60,
             description:
                 "Get ready to serve up some fun! Compete in our Ping Pong Tournament, where players of any level can showcase their skills, enjoy competition, and aim for the win! Note that we can only have 16 players, sign up will begin 1 hour before the event.",
         },
