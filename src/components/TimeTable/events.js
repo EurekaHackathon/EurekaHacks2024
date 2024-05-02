@@ -220,7 +220,7 @@ export const timeTableData = {
                 "Rev up your engines and prepare for a racing session with your peers.  Race to victory and claim the desired first place!",
         },
         {
-            name: "AI Presentation with Shashibushan Yenkanchi",
+            name: "AI Presentation with Shashibhushan Yenkanchi",
             color: "var(--terminal-blue)",
             start: {
                 hour: 16,
