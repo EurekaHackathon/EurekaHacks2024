@@ -24,6 +24,8 @@ import Shoppers1271 from "@/../public/Sponsors/Shoppers.png";
 import Tims from "@/../public/Sponsors/TH.png";
 import FB from "@/../public/Sponsors/foodbasics.png";
 import Shoppers1203 from "@/../public/Sponsors/Shoppers1203.png";
+import Starbucks from "@/../public/Sponsors/Starbucks.png";
+import Dominos from "@/../public/Sponsors/Dominos.png";
 
 const fadeIn = {
     initial: { opacity: 0 },
@@ -147,6 +149,12 @@ export default function Sponsors() {
                         image={Shoppers1203}
                         link="https://www.shoppersdrugmart.ca/en/store-locator/store/1203"
                     />
+
+                    <SponsorBox
+                        name="Dominos"
+                        image={Dominos}
+                        link="https://www.dominos.ca/"
+                    />
                 </motion.div>
 
                 <motion.div
@@ -193,6 +201,12 @@ export default function Sponsors() {
                         name="Food Basics"
                         image={FB}
                         link="https://www.foodbasics.ca/"
+                    />
+
+                    <SponsorBox
+                        name="Starbucks"
+                        image={Starbucks}
+                        link="https://www.starbucks.ca/"
                     />
                 </motion.div>
 
