@@ -109,7 +109,7 @@ export const timeTableData = {
                 "Explore the world of robotics with Orbit 1360: An innovative team pushing the boundaries of technology. Join us for a hands-on workshop where you’ll explore robotic principles. This event has been moved to the Gym.",
         },
         {
-            name: "Face & Banner Painting",
+            name: "Banner Painting",
             color: "var(--terminal-red)",
             start: {
                 hour: 9,
@@ -118,7 +118,7 @@ export const timeTableData = {
             column: 6,
             duration: 120,
             description:
-                "Let our artists transform your face into a work of art.",
+                "Join us for a creative session of banner painting! Express your artistic side, collaborate with fellow participants, and create vibrant banners that will be displayed throughout the event. Let your creativity shine!",
             images: [painting],
         },
         {
