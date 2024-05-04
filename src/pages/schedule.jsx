@@ -66,6 +66,14 @@ export default function PrivacyPolicy() {
                     <p>Judging Deadline</p>
                 </div>
             </div>
+            <a
+                href="https://docs.google.com/presentation/d/1scj-Q8O0UtQhz0NTQawMAJHhHZQv4lxf-e663_P1HS8/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer noopener"
+                className={styles["schedule-link"]}
+            >
+                View Slideshow
+            </a>
             <div className={styles["schedule"]}>
                 <TimeTable {...timeTableData} />
             </div>
