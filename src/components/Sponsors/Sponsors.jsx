@@ -13,6 +13,7 @@ import Sobeys from "@/../public/Sponsors/sobeys.png";
 import Rotary from "@/../public/Rotary.jpg";
 import Digitalent from "@/../public/Sponsors/digitalent.jpg";
 import Staples from "@/../public/Sponsors/Staples.png";
+import CryptoChicks from "@/../public/Sponsors/cryptochicks.png";
 import OTech from "@/../public/Sponsors/Otech.png";
 import NoFrills from "@/../public/Sponsors/olegs.png";
 import HDSB from "@/../public/Sponsors/hdsb.jpg";
@@ -176,6 +177,12 @@ export default function Sponsors() {
                         name="Staples"
                         image={Staples}
                         link="https://www.staples.ca/"
+                    />
+
+                    <SponsorBox
+                        name="CryptoChicks"
+                        image={CryptoChicks}
+                        link="https://www.cryptochicks.ca//"
                     />
 
                     <SponsorBox
