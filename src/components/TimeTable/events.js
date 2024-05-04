@@ -93,7 +93,7 @@ export const timeTableData = {
             duration: 15,
             images: [git],
             description:
-                "New to Git? Join us for a workshop on the essentials of Git, the version control system that powers modern software development. Learn the basics, best practices, and how to collaborate effectively with your team using Git.",
+                "New to Git? Join us for a workshop on the essentials of Git, the version control system that powers modern software development. Learn the basics, best practices, and how to collaborate effectively with your team using Git. https://tinyurl.com/eureka-git",
         },
         {
             name: "Robotics with Orbit 1360 (GYM)",
