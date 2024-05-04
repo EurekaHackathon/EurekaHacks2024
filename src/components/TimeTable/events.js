@@ -10,7 +10,6 @@ import teams from "../../../public/Schedule/teams.jpg";
 import git from "../../../public/Schedule/git.png";
 import quantum from "../../../public/Schedule/quantumComputing.jpg";
 import mario from "../../../public/Schedule/mario.jpg";
-import cryptochicks from "../../../public/Schedule/cryptochicks.png";
 
 export const timeTableData = {
     startTime: {
@@ -155,19 +154,6 @@ export const timeTableData = {
             column: 6,
             duration: 120,
             description: "Cool down with some ice cream from the ice cream truck!",
-        },
-        {
-            name: "Intro to Block Chain With Cryptochicks",
-            color: "var(--terminal-blue)",
-            start: {
-                hour: 14,
-                minute: 0,
-            },
-            column: 3,
-            duration: 60,
-            images: [cryptochicks],
-            description:
-                "In today’s “Intro to Blockchain” session, participants will learn all about blockchain basics— what it is, how it works, and why it matters. This session will focus on the main motivations behind blockchain including consensus, security, and decentralization as well as its practical use cases such as cryptocurrencies. Participants will also dive into the transition from Web 2.0 to Web 3.0 and see live demonstrations of blockchain in action.",
         },
         {
             name: "Reach Trivia",
