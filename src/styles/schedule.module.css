@@ -81,3 +81,11 @@
         font-size: 0.6em;
     }
 }
+
+.schedule-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--terminal-blue);
+}
