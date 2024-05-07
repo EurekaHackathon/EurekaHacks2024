@@ -65,11 +65,11 @@ export default function Footer() {
                             <li className={styles.item}>
                                 <Link
                                     className={styles.link}
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeLouKj4q5cLLsnMwZhTWwo027iXjCKwGsPpKuTPrfHDM0lmw/viewform"
+                                    href="https://eurekahacks-2024.devpost.com/project-gallery"
                                     prefetch={false}
                                     target="_blank"
                                 >
-                                    Register
+                                    Projects
                                 </Link>
                             </li>
                             <li className={styles.item}>

@@ -72,12 +72,12 @@ export default function NavBar() {
                 className={styles["register-outline"]}
             >
                 <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeLouKj4q5cLLsnMwZhTWwo027iXjCKwGsPpKuTPrfHDM0lmw/viewform"
+                    href="https://eurekahacks-2024.devpost.com/project-gallery"
                     prefetch={false}
                     target="_blank"
                     className={styles["register"]}
                 >
-                    <div className={styles["button"]}>Register</div>
+                    <div className={styles["button"]}>Projects</div>
                 </Link>
             </motion.div>
 
