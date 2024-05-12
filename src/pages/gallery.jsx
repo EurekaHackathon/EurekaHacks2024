@@ -5,12 +5,13 @@ import Carousel from "@/components/Carousel/Carousel";
 import Link from "next/link";
 import Image from "next/image";
 import EurekaHacksIcon from "@/../public/EurekaIcon2024.png";
+import { motion, AnimatePresence } from "framer-motion";
 
 const galleries = [
     { name: "OpeningCeremony", imageCount: 12 },
     { name: "Judging", imageCount: 42 },
     { name: "Lunch", imageCount: 12 },
-    { name: "Foyer", imageCount: 11  },
+    { name: "Foyer", imageCount: 11 },
     { name: "Participants", imageCount: 30 },
     { name: "Karaoke", imageCount: 12 },
     { name: "ClosingCeremony", imageCount: 23 },
@@ -25,25 +26,28 @@ const galleries = [
     { name: "GitWorkshop", imageCount: 2 },
 ];
 
-const defaultPath = "C:\\Users\\EurekaHACKS\\2024\\";
+const defaultPath = "C:\\Users\\Eureka\\2024\\";
 const actualPath = "../../Gallery";
 
 export default function Gallery() {
     const [path, setPath] = useState(defaultPath);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const galleryLinks = galleries.map((gallery) => (
         <Link
             key={gallery.name}
             href={`/gallery/#${gallery.name}`}
-            onClick={() =>
+            onClick={() => {
                 setPath(
                     defaultPath +
                         gallery.name.replace(/([a-z])([A-Z])/g, "$1 $2"),
-                )
-            }
+                );
+                setMenuOpen(false);
+            }}
         >
             <Folder
                 name={gallery.name.replace(/([a-z])([A-Z])/g, "$1 $2")}
+                className={styles.folder}
                 depth={2}
             />
         </Link>
@@ -62,9 +66,31 @@ export default function Gallery() {
                     </Link>
                     <div className={styles.path}>
                         <p className={styles.pathText}>{path}</p>
+                        <div
+                            className={styles["hamburger-menu"]}
+                            onClick={() => setMenuOpen(!menuOpen)}
+                        >
+                            <div className={styles["hamburger-line"]} />
+                            <div className={styles["hamburger-line"]} />
+                            <div className={styles["hamburger-line"]} />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.bottom}>
+                    <AnimatePresence>
+                        {menuOpen && (
+                            <motion.div
+                                className={styles.mobileSideBar}
+                                initial={{ x: -400 }}
+                                animate={{ x: 0 }}
+                                exit={{ x: -400 }}
+                                transition={{ ease: "easeIn", duration: 0.3 }}
+                            >
+                                <Folder className={styles.folder} name="2024" depth={1} />
+                                {galleryLinks}
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                     <div className={styles.sideBar}>
                         <Folder name="2024" depth={1} />
                         {galleryLinks}

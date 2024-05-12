@@ -27,7 +27,7 @@
     object-fit: contain;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1300px) {
     .image img {
         height: 26rem;
     }

@@ -1,6 +1,6 @@
 .folder {
-    --sideMargin: 2em;
-    margin: 0 2.5em 0 var(--sideMargin);
+    --sideMargin: 1.2em;
+    margin: 0 1em 0 var(--sideMargin);
     position: relative;
 }
 
@@ -31,9 +31,9 @@
 
 .folderIcon {
     color: var(--lighter-text-color);
-    scale: 1.5;
+    scale: 1.2;
 }
 
 .folderName {
-    font-size: 16px;
+    font-size: 12px;
 }
