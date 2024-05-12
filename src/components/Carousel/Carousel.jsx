@@ -38,6 +38,7 @@ export default function Folder({ images }) {
                                 }`}
                                 src={image}
                                 alt={`Image ${index + 1}`}
+                                loading="lazy"
                             />
                         </div>
                     ))}
