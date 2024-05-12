@@ -3,18 +3,60 @@ import styles from "@/styles/gallery.module.css";
 import Folder from "@/components/Folder/Folder";
 import Carousel from "@/components/Carousel/Carousel";
 import Link from "next/link";
+import Image from "next/image";
+import EurekaHacksIcon from "@/../public/EurekaIcon2024.png";
+
+const galleries = [
+    { name: "AmongUs", imageCount: 4 },
+    { name: "Chess", imageCount: 17 },
+    { name: "ClosingCeremony", imageCount: 23 },
+    { name: "Foyer", imageCount: 11  },
+    { name: "GitWorkshop", imageCount: 2 },
+    { name: "IceCream", imageCount: 3 },
+    { name: "Judging", imageCount: 42 },
+    { name: "Karaoke", imageCount: 12 },
+    { name: "Lunch", imageCount: 12 },
+    { name: "MarioKart", imageCount: 7 },
+    { name: "OpeningCeremony", imageCount: 12 },
+    { name: "Participants", imageCount: 30 },
+    { name: "QuantumComputing", imageCount: 9 },
+    { name: "Robotics", imageCount: 9 },
+    { name: "SmashBros", imageCount: 9 },
+    { name: "Team", imageCount: 8 },
+];
+
+const defaultPath = "C:\\Users\\EurekaHACKS\\2024\\";
+const actualPath = "../../Gallery";
 
 export default function Gallery() {
-    const [path, setPath] = useState("C:\\Users\\EurekaHACKS\\2023\\");
+    const [path, setPath] = useState(defaultPath);
+
+    const galleryLinks = galleries.map((gallery) => (
+        <Link
+            key={gallery.name}
+            href={`/gallery/#${gallery.name}`}
+            onClick={() =>
+                setPath(
+                    defaultPath +
+                        gallery.name.replace(/([a-z])([A-Z])/g, "$1 $2"),
+                )
+            }
+        >
+            <Folder
+                name={gallery.name.replace(/([a-z])([A-Z])/g, "$1 $2")}
+                depth={2}
+            />
+        </Link>
+    ));
 
     return (
         <>
             <div className={styles.gallery}>
                 <div className={styles.topBar}>
                     <Link href="/">
-                        <img
+                        <Image
                             className={styles.topIcon}
-                            src="EurekaIcon2024.png"
+                            src={EurekaHacksIcon}
                             alt="Eureka"
                         />
                     </Link>
@@ -24,59 +66,34 @@ export default function Gallery() {
                 </div>
                 <div className={styles.bottom}>
                     <div className={styles.sideBar}>
-                        <Folder name="2023" depth={1}></Folder>
-                        <Link href="/gallery/#projects">
-                            <Folder name="Projects" depth={2} />
-                        </Link>
-                        <Link href="/gallery/#participants">
-                            <Folder name="Participants" depth={2} />
-                        </Link>
-                        <Link href="/gallery/#presentations">
-                            <Folder name="Presentations" depth={2} />
-                        </Link>
+                        <Folder name="2024" depth={1} />
+                        {galleryLinks}
                     </div>
                     <div className={styles.view}>
                         <div className={styles.content}>
-                            <section id="projects">
-                                <h1 className={styles.title}>Projects</h1>
-                                <div className={styles.divider}></div>
-                                <Carousel
-                                    images={[
-                                        "Gallery/Img_0350.jpg",
-                                        "Gallery/Img_0357.jpg",
-                                        "Gallery/Img_0358.jpg",
-                                        "Gallery/Img_0360.jpg",
-                                    ]}
-                                />
-                            </section>
-                            <section id="participants">
-                                <h1 className={styles.title}>Participants</h1>
-                                <div className={styles.divider}></div>
-                                <Carousel
-                                    images={[
-                                        "Gallery/Img_0350.jpg",
-                                        "Gallery/Img_0357.jpg",
-                                        "Gallery/Img_0358.jpg",
-                                        "Gallery/Img_0360.jpg",
-                                    ]}
-                                />
-                            </section>
-                            <section id="presentations">
-                                <h1 className={styles.title}>Presentations</h1>
-                                <div className={styles.divider}></div>
-                                <Carousel
-                                    images={[
-                                        "Gallery/Img_0350.jpg",
-                                        "Gallery/Img_0357.jpg",
-                                        "Gallery/Img_0358.jpg",
-                                        "Gallery/Img_0360.jpg",
-                                        "Gallery/Img_0350.jpg",
-                                        "Gallery/Img_0357.jpg",
-                                        "Gallery/Img_0358.jpg",
-                                        "Gallery/Img_0360.jpg",
-                                    ]}
-                                />
-                            </section>
+                            {galleries.map((gallery) => (
+                                <section key={gallery.name} id={gallery.name}>
+                                    <h1 className={styles.title}>
+                                        {gallery.name.replace(
+                                            /([a-z])([A-Z])/g,
+                                            "$1 $2",
+                                        )}
+                                    </h1>
+                                    <div className={styles.divider}></div>
+                                    <Carousel
+                                        images={Array.from(
+                                            { length: gallery.imageCount },
+                                            (_, i) =>
+                                                `${actualPath}/${
+                                                    gallery.name
+                                                }/IMG_${String(i + 1).padStart(
+                                                    3,
+                                                    "0",
+                                                )}.jpg`,
+                                        )}
+                                    />
+                                </section>
+                            ))}
                         </div>
                     </div>
                 </div>
