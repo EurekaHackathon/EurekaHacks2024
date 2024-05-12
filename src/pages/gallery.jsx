@@ -86,7 +86,11 @@ export default function Gallery() {
                                 exit={{ x: -400 }}
                                 transition={{ ease: "easeIn", duration: 0.3 }}
                             >
-                                <Folder className={styles.folder} name="2024" depth={1} />
+                                <Folder
+                                    className={styles.folder}
+                                    name="2024"
+                                    depth={1}
+                                />
                                 {galleryLinks}
                             </motion.div>
                         )}

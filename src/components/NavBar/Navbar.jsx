@@ -56,7 +56,9 @@ export default function NavBar() {
                 <Link href="/#sponsors">Sponsors</Link>
                 <Link href="/#faq">FAQ</Link>
                 <Link href="/schedule">Schedule</Link>
-                <Link href="/gallery" prefetch={false}>Gallery</Link>
+                <Link href="/gallery" prefetch={false}>
+                    Gallery
+                </Link>
                 <Link href="https://2023.eurekahacks.ca" target="_blank">
                     2023
                 </Link>
@@ -137,7 +139,11 @@ export default function NavBar() {
                             <Link href="/schedule" onClick={toggleMenu}>
                                 Schedule
                             </Link>
-                            <Link href="/gallery" onClick={toggleMenu} prefetch={false}>
+                            <Link
+                                href="/gallery"
+                                onClick={toggleMenu}
+                                prefetch={false}
+                            >
                                 Gallery
                             </Link>
                             <Link
