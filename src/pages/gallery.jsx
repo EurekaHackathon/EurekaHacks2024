@@ -7,22 +7,22 @@ import Image from "next/image";
 import EurekaHacksIcon from "@/../public/EurekaIcon2024.png";
 
 const galleries = [
-    { name: "AmongUs", imageCount: 4 },
-    { name: "Chess", imageCount: 17 },
-    { name: "ClosingCeremony", imageCount: 23 },
-    { name: "Foyer", imageCount: 11  },
-    { name: "GitWorkshop", imageCount: 2 },
-    { name: "IceCream", imageCount: 3 },
-    { name: "Judging", imageCount: 42 },
-    { name: "Karaoke", imageCount: 12 },
-    { name: "Lunch", imageCount: 12 },
-    { name: "MarioKart", imageCount: 7 },
     { name: "OpeningCeremony", imageCount: 12 },
+    { name: "Judging", imageCount: 42 },
+    { name: "Lunch", imageCount: 12 },
+    { name: "Foyer", imageCount: 11  },
     { name: "Participants", imageCount: 30 },
+    { name: "Karaoke", imageCount: 12 },
+    { name: "ClosingCeremony", imageCount: 23 },
     { name: "QuantumComputing", imageCount: 9 },
     { name: "Robotics", imageCount: 9 },
-    { name: "SmashBros", imageCount: 9 },
     { name: "Team", imageCount: 8 },
+    { name: "MarioKart", imageCount: 7 },
+    { name: "SmashBros", imageCount: 9 },
+    { name: "Chess", imageCount: 11 },
+    { name: "AmongUs", imageCount: 4 },
+    { name: "IceCream", imageCount: 3 },
+    { name: "GitWorkshop", imageCount: 2 },
 ];
 
 const defaultPath = "C:\\Users\\EurekaHACKS\\2024\\";

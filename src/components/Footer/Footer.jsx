@@ -78,6 +78,11 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li className={styles.item}>
+                                <Link className={styles.link} href="/gallery" prefetch={false}>
+                                    Gallery
+                                </Link>
+                            </li>
+                            <li className={styles.item}>
                                 <Link
                                     className={styles.link}
                                     href="/sponsorship-package.pdf"
