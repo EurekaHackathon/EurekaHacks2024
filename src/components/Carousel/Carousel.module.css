@@ -22,9 +22,24 @@
 }
 
 .image img {
-    width: auto;
-    height: 26rem;
+    width: 20rem;
+    height: auto;
     object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    .image img {
+        height: 26rem;
+    }
+
+    .progressButtons {
+        gap: 0.5em;
+    }
+
+    .progressButton {
+        width: 8px;
+        height: 8px;
+    }
 }
 
 .buttonPrev,
@@ -67,12 +82,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.2em;
 }
 
 .progressButton {
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: var(--main-bg-color);
     transition: 200ms ease;
