@@ -4,7 +4,7 @@
 
 This repository hosts the EurekaHACKS 2024 Website built with Next.js.
 
-You can view the website [here](https://eurekahacks.ca/).
+You can view the website [here](https://2024.eurekahacks.ca/).
 
 This event has now officially ended, keep an eye out for Eureka Hacks 2025 though!
 
